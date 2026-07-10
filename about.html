@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Caitlin Atteberry. Product Designer.">
+<title>About | Caitlin Atteberry</title>
+<link rel="icon" type="image/svg+xml" href="ca-favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800;900&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#FFF2EF;-webkit-font-smoothing:antialiased;}
+  a{text-decoration:none;color:inherit;}
+  ::selection{background:#FEC8DE;color:#231A4E;}
+  [data-reveal]{opacity:0;}
+  .case-row,.feature-card{box-shadow:none;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease;}
+  .case-row:hover{transform:translateY(-6px);box-shadow:0 30px 64px -34px rgba(37,25,76,0.5);}
+  .case-row:hover .case-img{transform:scale(1.06);}
+  .feature-card:hover{transform:translateY(-6px);box-shadow:0 40px 84px -40px rgba(27,10,85,0.7);}
+  .feature-img{transform:rotateY(-23deg) rotateX(7deg) rotate(-1deg);transition:transform .55s cubic-bezier(.2,.7,.2,1);}
+  .feature-card:hover .feature-img{transform:rotateY(-19deg) rotateX(5deg) rotate(-1deg) scale(1.05);}
+  .t-rail{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:6px max(64px, calc((100vw - 1180px)/2 + 64px)) 24px;}
+  .t-rail::-webkit-scrollbar{display:none;}
+  .t-card{flex:0 0 clamp(340px,40vw,470px);scroll-snap-align:start;}
+  @media(max-width:900px){
+    nav{padding:22px 32px !important;}
+    header{padding:60px 32px !important;grid-template-columns:1fr !important;}
+    .work-section{padding:0 32px !important;}
+    .feature-card{grid-template-columns:1fr !important;padding:48px 32px !important;}
+    .cards-grid{grid-template-columns:1fr !important;}
+    footer{padding:80px 32px 60px !important;}
+  }
+</style>
+</head>
+<body>
+
+
+<div style="font-family:'Inter',sans-serif;color:#231A4E;overflow-x:hidden;background:#FFF2EF;">
+
+  <!-- NAV -->
+  <nav style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:22px 64px;background:rgba(255,242,239,0.88);backdrop-filter:blur(10px);">    <a href="index.html" aria-label="Home" style="display:block;">
+      <svg width="44" height="63" viewBox="0 0 130 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="130" height="186" rx="16" fill="#1601B5"></rect>
+        <path d="M108.364 55.668H95.6818C94.9318 51.9659 93.6193 48.7136 91.7443 45.9111C89.9034 43.1086 87.6534 40.7559 84.9943 38.853C82.3693 36.9154 79.4545 35.4623 76.25 34.4935C73.0455 33.5247 69.7045 33.0404 66.2273 33.0404C59.8864 33.0404 54.142 34.6665 48.9943 37.9188C43.8807 41.1711 39.8068 45.963 36.7727 52.2946C33.7727 58.6261 32.2727 66.3936 32.2727 75.5968C32.2727 84.8001 33.7727 92.5675 36.7727 98.8991C39.8068 105.231 43.8807 110.023 48.9943 113.275C54.142 116.527 59.8864 118.153 66.2273 118.153C69.7045 118.153 73.0455 117.669 76.25 116.7C79.4545 115.731 82.3693 114.296 84.9943 112.393C87.6534 110.455 89.9034 108.085 91.7443 105.283C93.6193 102.445 94.9318 99.1932 95.6818 95.5257H108.364C107.409 100.958 105.67 105.819 103.148 110.109C100.625 114.399 97.4886 118.049 93.7386 121.06C89.9886 124.035 85.7784 126.301 81.108 127.858C76.4716 129.415 71.5114 130.194 66.2273 130.194C57.2955 130.194 49.3523 127.979 42.3977 123.551C35.4432 119.122 29.9716 112.825 25.983 104.66C21.9943 96.4945 20 86.8068 20 75.5968C20 64.3868 21.9943 54.6992 25.983 46.5339C29.9716 38.3686 35.4432 32.0716 42.3977 27.643C49.3523 23.2143 57.2955 21 66.2273 21C71.5114 21 76.4716 21.7785 81.108 23.3354C85.7784 24.8924 89.9886 27.1759 93.7386 30.186C97.4886 33.1615 100.625 36.7943 103.148 41.0846C105.67 45.3402 107.409 50.2013 108.364 55.668Z" fill="white"></path>
+        <path d="M33.2955 165H20L58.4545 58.7126H71.5455L110 165H96.7045L65.4091 75.5276H64.5909L33.2955 165Z" fill="white"></path>
+      </svg>
+    </a>
+    <div style="display:flex;gap:38px;font-family:'Lexend',sans-serif;font-weight:500;font-size:16px;">
+      <a href="index.html" style="color:#231A4E;transition:opacity .2s ease;">Home</a>
+      <a href="about.html" style="color:#D6006E;font-weight:600;border-bottom:2px solid #D6006E;padding-bottom:3px;">About</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header style="max-width:1180px;margin:0 auto;padding:110px 64px 90px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:72px;align-items:center;">
+    <div>
+      <div data-reveal style="font-family:'Lexend',sans-serif;font-weight:500;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#D6006E;margin-bottom:24px;">About</div>
+      <h1 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(40px,5.4vw,76px);line-height:1.02;letter-spacing:-2px;color:#231A4E;margin:0 0 28px;">So glad you're here.</h1>
+      <p data-reveal style="font-size:21px;line-height:1.7;color:#231A4E;margin:0 0 22px;">I'm Caitlin, a product designer with 15+ years in startups, currently at Wonderschool making early childhood education more accessible.</p>
+      <p data-reveal style="font-size:21px;line-height:1.7;color:#231A4E;margin:0 0 34px;opacity:0.82;">I do my best work in fast-moving, imperfect conditions: where requirements shift, data's incomplete, and someone still has to make the call. My strength isn't following a rigid process, it's applying judgment, taste, and product intuition to move things forward responsibly.</p>
+      <a data-reveal href="assets/Caitlin-Atteberry-Resume.pdf" target="_blank" style="display:inline-flex;align-items:center;gap:10px;font-family:'Unbounded',sans-serif;font-weight:600;font-size:15px;letter-spacing:0.3px;color:#fff;background:#D6006E;padding:16px 30px;border-radius:999px;transition:transform .2s ease,box-shadow .2s ease;">↓ Download résumé</a>
+    </div>
+    <div data-reveal style="aspect-ratio:4/5;border-radius:14px;overflow:hidden;background:#FEECEA;box-shadow:0 24px 60px -30px rgba(37,25,76,0.45);">
+      <img src="assets/caitlin.jpg" alt="Caitlin Atteberry" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;">
+    </div>
+  </header>
+
+  <!-- BELIEF QUOTE PANEL -->
+  <section style="position:relative;padding:0 64px;">
+    <div style="position:relative;max-width:1180px;margin:0 auto;background:#2A1E5C;border-radius:16px;padding:90px 8vw;text-align:center;">
+      <p data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:clamp(26px,3.4vw,44px);line-height:1.3;letter-spacing:-0.5px;color:#fff;margin:0;max-width:20ch;margin-left:auto;margin-right:auto;">Good design doesn't just improve interfaces. It <em style="font-style:italic;">reduces organizational anxiety</em>, <strong style="font-weight:800;color:#FF8FBE;">aligns teams</strong>, and creates <strong style="font-weight:800;color:#FF8FBE;">momentum</strong>.</p>
+    </div>
+  </section>
+
+  <main style="padding:24px 0 120px;">
+
+    <!-- HOW I WORK -->
+    <section style="max-width:760px;margin:0 auto;padding:96px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:38px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">How I work</h2>
+      <p data-reveal style="font-size:18px;line-height:1.8;color:#231A4E;text-align:center;margin:0 auto 8px;max-width:60ch;">I design by making decisions visible. Without perfect research or long runways, I focus on surfacing the right questions early and being explicit about tradeoffs, clarity over ceremony, progress over perfection.</p>
+    </section>
+    <section style="max-width:720px;margin:0 auto;padding:40px 32px 0;">
+        <div data-reveal style="display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:1px solid #F1D9D4;"><div style="flex:none;width:38px;height:38px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;">1</div><div><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin-bottom:6px;">Clarify the real problem</div><p style="font-size:16px;line-height:1.6;color:#231A4E;margin:0;opacity:0.8;">Often different from the initial ask.</p></div></div>
+        <div data-reveal style="display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:1px solid #F1D9D4;"><div style="flex:none;width:38px;height:38px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;">2</div><div><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin-bottom:6px;">Identify constraints early</div><p style="font-size:16px;line-height:1.6;color:#231A4E;margin:0;opacity:0.8;">Time, data, tech, business pressure.</p></div></div>
+        <div data-reveal style="display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:1px solid #F1D9D4;"><div style="flex:none;width:38px;height:38px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;">3</div><div><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin-bottom:6px;">Explore widely, then narrow decisively</div><p style="font-size:16px;line-height:1.6;color:#231A4E;margin:0;opacity:0.8;">Multiple directions quickly, one clear bet.</p></div></div>
+        <div data-reveal style="display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:1px solid #F1D9D4;"><div style="flex:none;width:38px;height:38px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;">4</div><div><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin-bottom:6px;">Communicate the reasoning</div><p style="font-size:16px;line-height:1.6;color:#231A4E;margin:0;opacity:0.8;">Clearly, to PMs, engineers, and stakeholders.</p></div></div>
+        <div data-reveal style="display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:none;"><div style="flex:none;width:38px;height:38px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;">5</div><div><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin-bottom:6px;">Ship, observe, and refine</div><p style="font-size:16px;line-height:1.6;color:#231A4E;margin:0;opacity:0.8;">Real signal beats more deliberation.</p></div></div>
+    </section>
+    <section style="max-width:900px;margin:56px auto 0;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+      <div data-reveal><div style="background:#fff;border:1px solid #F1D9D4;border-radius:12px;padding:32px 32px;"><div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:#D6006E;margin-bottom:16px;">Collaboration style</div><p style="font-size:16px;line-height:1.7;color:#231A4E;margin:0;">I work best in close partnership with product and engineering, especially when direction is ambiguous. I'm thoughtful about when to push back, when to align, and when to move forward despite uncertainty, valuing direct communication and shared ownership of outcomes.</p></div></div>
+      <div data-reveal><div style="background:#FEECEA;border:1px solid #F1D9D4;border-radius:12px;padding:32px 32px;"><div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:#D6006E;margin-bottom:16px;">What I optimize for</div><ul style="list-style:none;margin:0;padding:0;"><li style="font-size:16px;line-height:1.5;color:#231A4E;margin:0 0 12px;padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:#D6006E;font-weight:700;">›</span>User understanding over novelty</li><li style="font-size:16px;line-height:1.5;color:#231A4E;margin:0 0 12px;padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:#D6006E;font-weight:700;">›</span>Product coherence over one-off wins</li><li style="font-size:16px;line-height:1.5;color:#231A4E;margin:0 0 12px;padding-left:20px;position:relative;"><span style="position:absolute;left:0;color:#D6006E;font-weight:700;">›</span>Long-term trust over short-term metrics</li></ul></div></div>
+    </section>
+
+    <!-- HOW I'VE GROWN -->
+    <section style="max-width:900px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:38px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 14px;">How I've grown</h2>
+      <p data-reveal style="font-size:18px;line-height:1.7;color:#231A4E;text-align:center;margin:0 auto 48px;opacity:0.8;">What I've learned designing in the real world.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+        <div data-reveal style="background:#fff;border:1px solid #F1D9D4;border-radius:12px;padding:30px 30px;"><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:19px;line-height:1.15;color:#231A4E;margin-bottom:12px;">Process is a tool, not a requirement</div><p style="font-size:16px;line-height:1.65;color:#231A4E;margin:0;opacity:0.8;">The value is in thinking clearly, not in how many artifacts exist.</p></div>
+        <div data-reveal style="background:#fff;border:1px solid #F1D9D4;border-radius:12px;padding:30px 30px;"><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:19px;line-height:1.15;color:#231A4E;margin-bottom:12px;">Most product problems are alignment problems</div><p style="font-size:16px;line-height:1.65;color:#231A4E;margin:0;opacity:0.8;">Design succeeds or fails based on how well teams share context.</p></div>
+        <div data-reveal style="background:#fff;border:1px solid #F1D9D4;border-radius:12px;padding:30px 30px;"><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:19px;line-height:1.15;color:#231A4E;margin-bottom:12px;">Good judgment beats perfect data</div><p style="font-size:16px;line-height:1.65;color:#231A4E;margin:0;opacity:0.8;">Especially when speed matters.</p></div>
+        <div data-reveal style="background:#fff;border:1px solid #F1D9D4;border-radius:12px;padding:30px 30px;"><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:19px;line-height:1.15;color:#231A4E;margin-bottom:12px;">Taste compounds</div><p style="font-size:16px;line-height:1.65;color:#231A4E;margin:0;opacity:0.8;">Strong design decisions build trust over time, even when impact isn't immediately measurable.</p></div>
+      </div>
+    </section>
+
+    <!-- WHAT YOU CAN EXPECT -->
+    <section data-reveal style="max-width:900px;margin:0 auto;padding:96px 32px 0;">
+      <div style="background:#2A1E5C;border-radius:16px;padding:64px 8%;text-align:center;">
+        <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#FF8FBE;margin-bottom:22px;">What you can expect from me</div>
+        <p style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:clamp(22px,2.6vw,32px);line-height:1.3;letter-spacing:-0.5px;color:#fff;margin:0 auto;max-width:24ch;">A designer who is calm in ambiguity, thoughtful about tradeoffs, honest about constraints, and focused on shipping work that actually helps people.</p>
+      </div>
+    </section>
+
+        <!-- EXPERIENCE -->
+    <section style="max-width:920px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:46px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 14px;">Experience</h2>
+      <p data-reveal style="font-size:18px;line-height:1.7;color:#231A4E;text-align:center;margin:0 auto 56px;opacity:0.8;max-width:52ch;">15+ years turning complex, multi-sided platforms into products people trust.</p>
+
+      <div data-reveal style="display:grid;grid-template-columns:1fr auto;gap:18px 40px;align-items:baseline;padding:26px 8px;border-bottom:1px solid #F1D9D4;">
+        <div>
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:23px;color:#231A4E;">Wonderschool</div>
+          <div style="font-size:18px;color:#231A4E;opacity:0.7;margin-top:4px;">Senior Product Designer. Product Design Lead</div>
+          <div style="font-size:15px;color:#231A4E;opacity:0.6;margin-top:8px;line-height:1.5;">Rebuilt the child care management platform and led a cross-stack design-system audit.</div>
+        </div>
+        <div style="font-family:'Unbounded',sans-serif;font-weight:600;font-size:16px;color:#D6006E;white-space:nowrap;">2023–Now</div>
+      </div>
+
+      <div data-reveal style="display:grid;grid-template-columns:1fr auto;gap:18px 40px;align-items:baseline;padding:26px 8px;border-bottom:1px solid #F1D9D4;">
+        <div>
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:23px;color:#231A4E;">DISQO</div>
+          <div style="font-size:18px;color:#231A4E;opacity:0.7;margin-top:4px;">Principal Product Designer. B2B SaaS web + mobile</div>
+          <div style="font-size:15px;color:#231A4E;opacity:0.6;margin-top:8px;line-height:1.5;">Overhauled Survey Junkie rewards across SPA, iOS, and Android on a new design system.</div>
+        </div>
+        <div style="font-family:'Unbounded',sans-serif;font-weight:600;font-size:16px;color:#D6006E;white-space:nowrap;">2022–2023</div>
+      </div>
+
+      <div data-reveal style="display:grid;grid-template-columns:1fr auto;gap:18px 40px;align-items:baseline;padding:26px 8px;border-bottom:1px solid #F1D9D4;">
+        <div>
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:23px;color:#231A4E;">K4Connect</div>
+          <div style="font-size:18px;color:#231A4E;opacity:0.7;margin-top:4px;">Product &amp; UX Lead. Senior UX/UI Designer</div>
+          <div style="font-size:15px;color:#231A4E;opacity:0.6;margin-top:8px;line-height:1.5;">Led product and UX for a three-sided senior-living marketplace.</div>
+        </div>
+        <div style="font-family:'Unbounded',sans-serif;font-weight:600;font-size:16px;color:#D6006E;white-space:nowrap;">2020–2022</div>
+      </div>
+
+      <div data-reveal style="display:grid;grid-template-columns:1fr auto;gap:18px 40px;align-items:baseline;padding:26px 8px;border-bottom:1px solid #F1D9D4;">
+        <div>
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:23px;color:#231A4E;">TransLoc</div>
+          <div style="font-size:18px;color:#231A4E;opacity:0.7;margin-top:4px;">Product Designer</div>
+          <div style="font-size:15px;color:#231A4E;opacity:0.6;margin-top:8px;line-height:1.5;">Designed booking and reporting tools for on-demand municipal transit.</div>
+        </div>
+        <div style="font-family:'Unbounded',sans-serif;font-weight:600;font-size:16px;color:#D6006E;white-space:nowrap;">2019–2020</div>
+      </div>
+
+      <div data-reveal style="display:grid;grid-template-columns:1fr auto;gap:18px 40px;align-items:baseline;padding:26px 8px;border-bottom:1px solid #F1D9D4;">
+        <div>
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:23px;color:#231A4E;">Valassis Digital</div>
+          <div style="font-size:18px;color:#231A4E;opacity:0.7;margin-top:4px;">Senior Visual Designer</div>
+          <div style="font-size:15px;color:#231A4E;opacity:0.6;margin-top:8px;line-height:1.5;">Senior visual design across advertising and data products.</div>
+        </div>
+        <div style="font-family:'Unbounded',sans-serif;font-weight:600;font-size:16px;color:#D6006E;white-space:nowrap;">2016–2019</div>
+      </div>
+
+      <div data-reveal style="display:grid;grid-template-columns:1fr auto;gap:18px 40px;align-items:baseline;padding:26px 8px;">
+        <div>
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:23px;color:#231A4E;">Toshiba</div>
+          <div style="font-size:18px;color:#231A4E;opacity:0.7;margin-top:4px;">Product Designer</div>
+          <div style="font-size:15px;color:#231A4E;opacity:0.6;margin-top:8px;line-height:1.5;">Early product and brand design foundations.</div>
+        </div>
+        <div style="font-family:'Unbounded',sans-serif;font-weight:600;font-size:16px;color:#D6006E;white-space:nowrap;">2011–2015</div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section style="max-width:760px;margin:0 auto;padding:104px 32px 0;text-align:center;">
+      <p data-reveal style="font-style:italic;font-size:19px;color:#D6006E;margin:0;">Based in Raleigh, North Carolina.</p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:transparent;border-top:1px solid #F4DEDA;padding:120px 32px 100px;text-align:center;">
+    <h2 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(48px,7vw,84px);line-height:1.05;letter-spacing:-2px;color:#D6006E;margin:0 0 48px;">Let's keep<br>in touch</h2>
+    <div style="display:flex;gap:36px;justify-content:center;align-items:center;color:#231A4E;">
+      <a href="mailto:ccattebe@gmail.com" aria-label="Email" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3.5 6.5l8.5 6 8.5-6"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/caitlin-atteberry-b6901729/" target="_blank" aria-label="LinkedIn" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="reveal.js"></script>
+</body>
+</html>

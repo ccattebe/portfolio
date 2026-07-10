@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Caitlin Atteberry. Product Designer.">
+<title>Portfolio | Caitlin Atteberry</title>
+<link rel="icon" type="image/svg+xml" href="ca-favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800;900&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#FFF2EF;-webkit-font-smoothing:antialiased;}
+  a{text-decoration:none;color:inherit;}
+  ::selection{background:#FEC8DE;color:#231A4E;}
+  [data-reveal]{opacity:0;}
+  .case-row,.feature-card{box-shadow:none;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease;}
+  .case-row:hover{transform:translateY(-6px);box-shadow:0 30px 64px -34px rgba(37,25,76,0.5);}
+  .case-row:hover .case-img{transform:scale(1.06);}
+  .feature-card:hover{transform:translateY(-6px);box-shadow:0 40px 84px -40px rgba(27,10,85,0.7);}
+  .feature-img{transform:rotateY(-23deg) rotateX(7deg) rotate(-1deg);transition:transform .55s cubic-bezier(.2,.7,.2,1);}
+  .feature-card:hover .feature-img{transform:rotateY(-19deg) rotateX(5deg) rotate(-1deg) scale(1.05);}
+  .t-rail{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:6px max(64px, calc((100vw - 1180px)/2 + 64px)) 24px;}
+  .t-rail::-webkit-scrollbar{display:none;}
+  .t-card{flex:0 0 clamp(340px,40vw,470px);scroll-snap-align:start;}
+  @media(max-width:900px){
+    nav{padding:22px 32px !important;}
+    header{padding:60px 32px !important;grid-template-columns:1fr !important;}
+    .work-section{padding:0 32px !important;}
+    .feature-card{grid-template-columns:1fr !important;padding:48px 32px !important;}
+    .cards-grid{grid-template-columns:1fr !important;}
+    footer{padding:80px 32px 60px !important;}
+  }
+</style>
+</head>
+<body>
+
+
+<div style="font-family:'Inter',sans-serif;color:#231A4E;overflow-x:hidden;background:#FFF2EF;">
+
+  <!-- NAV -->
+  <nav style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:22px 64px;background:rgba(255,242,239,0.88);backdrop-filter:blur(10px);">
+    <a href="index.html" aria-label="Home" style="display:block;">
+      <svg width="44" height="63" viewBox="0 0 130 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="130" height="186" rx="16" fill="#1601B5"></rect>
+        <path d="M108.364 55.668H95.6818C94.9318 51.9659 93.6193 48.7136 91.7443 45.9111C89.9034 43.1086 87.6534 40.7559 84.9943 38.853C82.3693 36.9154 79.4545 35.4623 76.25 34.4935C73.0455 33.5247 69.7045 33.0404 66.2273 33.0404C59.8864 33.0404 54.142 34.6665 48.9943 37.9188C43.8807 41.1711 39.8068 45.963 36.7727 52.2946C33.7727 58.6261 32.2727 66.3936 32.2727 75.5968C32.2727 84.8001 33.7727 92.5675 36.7727 98.8991C39.8068 105.231 43.8807 110.023 48.9943 113.275C54.142 116.527 59.8864 118.153 66.2273 118.153C69.7045 118.153 73.0455 117.669 76.25 116.7C79.4545 115.731 82.3693 114.296 84.9943 112.393C87.6534 110.455 89.9034 108.085 91.7443 105.283C93.6193 102.445 94.9318 99.1932 95.6818 95.5257H108.364C107.409 100.958 105.67 105.819 103.148 110.109C100.625 114.399 97.4886 118.049 93.7386 121.06C89.9886 124.035 85.7784 126.301 81.108 127.858C76.4716 129.415 71.5114 130.194 66.2273 130.194C57.2955 130.194 49.3523 127.979 42.3977 123.551C35.4432 119.122 29.9716 112.825 25.983 104.66C21.9943 96.4945 20 86.8068 20 75.5968C20 64.3868 21.9943 54.6992 25.983 46.5339C29.9716 38.3686 35.4432 32.0716 42.3977 27.643C49.3523 23.2143 57.2955 21 66.2273 21C71.5114 21 76.4716 21.7785 81.108 23.3354C85.7784 24.8924 89.9886 27.1759 93.7386 30.186C97.4886 33.1615 100.625 36.7943 103.148 41.0846C105.67 45.3402 107.409 50.2013 108.364 55.668Z" fill="white"></path>
+        <path d="M33.2955 165H20L58.4545 58.7126H71.5455L110 165H96.7045L65.4091 75.5276H64.5909L33.2955 165Z" fill="white"></path>
+      </svg>
+    </a>
+    <div style="display:flex;gap:38px;font-family:'Lexend',sans-serif;font-weight:500;font-size:16px;">
+      <a href="index.html" style="color:#D6006E;font-weight:600;border-bottom:2px solid #D6006E;padding-bottom:3px;">Home</a>
+      <a href="about.html" style="color:#231A4E;transition:opacity .2s ease;">About</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header style="max-width:1180px;margin:0 auto;padding:80px 64px 80px;display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center;">
+    <div>
+      <div data-reveal="" style="font-family:'Lexend',sans-serif;font-weight:500;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:#D6006E;margin-bottom:22px;">Caitlin Atteberry</div>
+      <h1 data-reveal="" style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(40px,5.4vw,80px);line-height:1.03;letter-spacing:-2px;color:#231A4E;margin:0 0 30px;max-width:16ch;">Good judgment at the speed of AI.</h1>
+      <p data-reveal="" style="font-size:21px;line-height:1.6;color:#231A4E;max-width:600px;margin:0;opacity:0.85;">An AI-native product designer turning ambiguity into clear, intuitive products, with sound judgment and a bias toward shipping.</p>
+    </div>
+    <!-- small photo with accents -->
+    <div data-reveal="" style="position:relative;width:200px;height:200px;justify-self:center;">
+      <svg viewBox="0 0 1064 563" style="position: absolute; left: -18%; bottom: 2%; width: 62%; z-index: 2; opacity: 0.8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M843.531 386.988L1007.21 292.145L978.237 241.774L810.967 338.696C804.536 330.65 797.766 322.889 790.68 315.433L928.671 176.945L887.691 135.817L747.354 276.661C739.529 270.724 731.452 265.103 723.144 259.816L823.095 86.0722L772.905 56.9907L671.799 232.744C663.077 229.02 654.177 225.635 645.116 222.603L697.681 25.7196L641.702 10.6659L588.81 208.775C579.644 207.306 570.362 206.186 560.977 205.431V0H503.023V205.431C493.638 206.186 484.356 207.306 475.19 208.775L422.298 10.6659L366.319 25.7196L418.884 222.603C409.823 225.635 400.923 229.02 392.201 232.744L291.095 56.9907L240.905 86.0722L340.856 259.816C332.547 265.103 324.471 270.724 316.647 276.661L176.309 135.817L135.329 176.945L273.32 315.433C266.234 322.889 259.464 330.65 253.033 338.696L85.7629 241.774L56.7859 292.145L220.469 386.988C215.16 396.432 210.265 406.142 205.808 416.093L25.6272 367.64L10.6276 423.821L186.398 471.088C183.489 482.138 181.091 493.397 179.232 504.837H0V563H1064V504.837H884.768C882.909 493.397 880.511 482.138 877.602 471.088L1053.37 423.821L1038.37 367.64L858.192 416.093C853.736 406.142 848.84 396.432 843.531 386.988Z" fill="#FFFFFF"></path></svg>
+      <div style="position:absolute;inset:0;border-radius:50%;overflow:hidden;z-index:1;box-shadow:0 20px 48px -24px rgba(37,25,76,0.4);">
+        <img src="assets/caitlin.jpg" alt="Caitlin Atteberry" style="width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block;">
+      </div>
+      <svg viewBox="0 0 1472 622" style="position: absolute; right: -18%; top: -3px; width: 129px; z-index: 10; transform: rotate(0deg) scaleX(0.97); height: 63px; opacity: 0.8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M47.3494 473.111C30.5379 500.759 0 527.007 0 559.365C0 593.722 29.0754 622.328 61.1052 609.899C128.295 583.824 175.938 518.468 175.938 441.968V203.704C175.938 146.939 212.397 120.071 235.807 120.071C259.218 120.071 295.677 146.939 295.677 203.704V418.296C295.677 520.223 366.503 622 475.436 622C584.369 622 655.195 520.223 655.195 418.296V203.704C655.195 146.939 691.654 120.071 715.065 120.071C738.475 120.071 774.934 146.939 774.934 203.704V418.296C774.934 520.223 845.761 622 954.693 622C1063.63 622 1134.45 520.223 1134.45 418.296V203.704C1134.45 146.939 1170.91 120.071 1194.32 120.071C1217.73 120.071 1254.19 146.939 1254.19 203.704V418.296C1254.19 520.223 1325.02 622 1433.95 622C1436.96 622 1439.79 620.631 1441.74 618.346L1458.21 599.062C1463.6 592.747 1467.41 585.241 1469.33 577.162L1470.16 573.639C1473.23 560.735 1470.39 547.137 1462.43 536.532L1457.83 530.407C1450.9 521.192 1445.48 501.929 1433.95 501.929C1410.54 501.929 1374.08 475.061 1374.08 418.296V203.704C1374.08 101.777 1303.25 0 1194.32 0C1085.39 0 1014.56 101.777 1014.56 203.704V418.296C1014.56 475.061 978.104 501.929 954.693 501.929C931.283 501.929 894.824 475.061 894.824 418.296V203.704C894.824 101.777 823.997 0 715.065 0C606.132 0 535.306 101.777 535.306 203.704V418.296C535.306 475.061 498.847 501.929 475.436 501.929C452.025 501.929 415.566 475.061 415.566 418.296V203.704C415.566 101.777 344.74 0 235.807 0C126.875 0 56.0482 101.777 56.0482 203.704V441.968C56.0482 453.373 52.8689 464.034 47.3494 473.111Z" fill="#FFFFFF"></path></svg>
+    </div>
+  </header>
+
+  <main style="padding:60px 0 120px;">
+    <section style="max-width:1180px;margin:0 auto;padding:0 64px;">
+      <div data-reveal="" style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:56px;">
+        <h2 style="font-family:'Lexend',sans-serif;font-weight:600;font-size:clamp(24px,2.4vw,32px);letter-spacing:0.5px;color:#231A4E;margin:0;">Selected Work</h2>
+      </div>
+
+      <!-- FEATURED: CCMS 3.0 -->
+      <a href="ccms.html" data-reveal="" class="feature-card" style="position:relative;display:grid;grid-template-columns:0.9fr 1.1fr;gap:36px;align-items:center;overflow:hidden;background:linear-gradient(125deg,#1A0A52 0%,#2B1372 58%,#1E0B5E 100%);border-radius:8px;padding:76px 0 76px 64px;margin-bottom:40px;">
+        <div style="position:relative;z-index:2;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:500;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:26px;">Wonderschool Core</div>
+          <h3 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(34px,3.6vw,54px);line-height:1.04;letter-spacing:-1px;color:#fff;margin:0 0 28px;">Designing a faster path to paid</h3>
+          <p style="font-size:20px;line-height:1.55;color:#B9AEE6;margin:0 0 18px;max-width:26ch;">A ground-up rethink of child care management that puts providers in control of who lands on their roster.</p>
+          <div style="margin:0 0 38px;"><span style="font-size:14px;color:#E7E1FA;font-weight:500;"><strong style="font-weight:500;">Outcome:</strong> A new enrollment model, from prototype to build spec.</span></div>
+          <span style="display:inline-flex;align-items:center;gap:8px;font-family:'Lexend',sans-serif;font-weight:500;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;line-height:1;"><span style="white-space:nowrap;">View case study</span><span style="font-size:16px;letter-spacing:0;">→</span></span>
+        </div>
+        <div style="position:relative;height:100%;min-height:360px;overflow:hidden;display:flex;align-items:center;padding-right:56px;perspective:1600px;">
+          <img src="assets/ccms-prospective-families.png" alt="CCMS 3.0 Prospective Families list with status pipeline" style="width:112%;height:auto;display:block;transform:rotateY(-16deg) rotateX(5deg) rotate(-1deg);transform-origin:left center;">
+        </div>
+      </a>
+
+      <!-- FEATURED: Survey Junkie -->
+      <a href="survey-junkie.html" data-reveal="" class="feature-card" style="position:relative;display:grid;grid-template-columns:0.9fr 1.1fr;gap:36px;align-items:center;overflow:hidden;background:linear-gradient(125deg,#1A0A52 0%,#2B1372 58%,#1E0B5E 100%);border-radius:8px;padding:76px 0 76px 64px;margin-bottom:40px;">
+
+        <!-- text -->
+        <div style="position:relative;z-index:2;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:500;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:26px;">DISQO. Survey Junkie</div>
+          <h3 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(34px,3.6vw,54px);line-height:1.04;letter-spacing:-1px;color:#fff;margin:0 0 28px;">Creating a rewarding Survey Junkie</h3>
+          <p style="font-size:20px;line-height:1.55;color:#B9AEE6;margin:0 0 18px;max-width:24ch;">A complete redesign and launch of the Survey Junkie platform.</p>
+          <div style="margin:0 0 38px;"><span style="font-size:14px;color:#E7E1FA;font-weight:500;"><strong style="font-weight:500;">Outcome:</strong> Shipped across SPA, iOS, and Android on a new design system.</span></div>
+          <span style="display:inline-flex;align-items:center;gap:8px;font-family:'Lexend',sans-serif;font-weight:500;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;line-height:1;"><span style="white-space:nowrap;">View case study</span><span style="font-size:16px;letter-spacing:0;">→</span></span>
+        </div>
+
+        <!-- visual -->
+        <div style="position:relative;height:100%;min-height:360px;overflow:hidden;">
+          <img src="assets/home-survey-junkie-hero.png" alt="Survey Junkie rewards experience on phone and desktop" style="position:absolute;left:-6%;top:50%;transform:translateY(-50%);width:130%;max-width:130%;height:auto;display:block;">
+        </div>
+      </a>
+
+      <!-- FEATURED 2: Goal Setting -->
+      <a href="goal-setting.html" data-reveal class="feature-card" style="position:relative;display:grid;grid-template-columns:0.9fr 1.1fr;gap:36px;align-items:center;overflow:hidden;background:linear-gradient(125deg,#1A0A52 0%,#2B1372 58%,#1E0B5E 100%);border-radius:8px;padding:76px 0 76px 64px;margin-bottom:72px;">
+        <div style="position:relative;z-index:2;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:500;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:26px;">DISQO. Survey Junkie</div>
+          <h3 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(34px,3.6vw,54px);line-height:1.04;letter-spacing:-1px;color:#fff;margin:0 0 28px;">Testing our way to a better goal</h3>
+          <p style="font-size:20px;line-height:1.55;color:#B9AEE6;margin:0 0 18px;max-width:26ch;">Two rounds of hypothesis-driven testing turned a goal-setting hunch into a feature that moved retention.</p>
+          <div style="margin:0 0 38px;"><span style="font-size:14px;color:#E7E1FA;font-weight:500;"><strong style="font-weight:500;">Outcome:</strong> 54% goal-completion, +20% lift in 14-day retention.</span></div>
+          <span style="display:inline-flex;align-items:center;gap:8px;font-family:'Lexend',sans-serif;font-weight:500;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:#fff;line-height:1;"><span style="white-space:nowrap;">View case study</span><span style="font-size:16px;letter-spacing:0;">→</span></span>
+        </div>
+        <div style="position:relative;height:100%;min-height:360px;overflow:hidden;">
+          <img src="assets/home-goal-setting-hero.png" alt="Survey Junkie goal-setting flow on two phones" style="position:absolute;left:-6%;top:50%;transform:translateY(-50%);width:130%;max-width:130%;height:auto;display:block;">
+        </div>
+      </a>
+
+      <!-- IN PROGRESS -->
+      <div data-reveal style="display:flex;align-items:center;gap:12px;margin:0 0 32px;">
+        <span style="font-family:'Lexend',sans-serif;font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#B08AA0;">In Progress</span>
+        <span style="flex:1;height:1px;background:#F2DED9;"></span>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:24px;">
+
+        <a href="design-system.html" data-reveal="" style="display:flex;flex-direction:column;background:#fff;border:1px solid #F2E2DE;border-radius:8px;padding:36px 32px;transition:transform .25s ease,box-shadow .25s ease;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:500;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#D6006E;margin-bottom:16px;">Wonderschool. Design Systems</div>
+          <h3 style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:22px;line-height:1.15;letter-spacing:-0.3px;color:#231A4E;margin:0 0 14px;">Making the design system visible</h3>
+          <p style="font-size:15px;line-height:1.6;color:#231A4E;opacity:0.75;margin:0 0 20px;flex:1;">Turning invisible component drift across two stacks into a diagnostic audit and a visual drift gallery the whole team can act from.</p>
+          <div style="margin:0 0 20px;"><span style="font-size:13px;color:#231A4E;font-weight:500;"><strong style="font-weight:500;">Outcome:</strong> 27 components mapped; drift turned into a ranked worklist.</span></div>
+          <span style="display:inline-flex;align-items:center;gap:6px;font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:#D6006E;line-height:1;"><span style="white-space:nowrap;">View case study</span><span style="font-size:14px;letter-spacing:0;">→</span></span>
+        </a>
+
+        <a href="nm-claim-flow.html" data-reveal="" style="display:flex;flex-direction:column;background:#fff;border:1px solid #F2E2DE;border-radius:8px;padding:36px 32px;transition:transform .25s ease,box-shadow .25s ease;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:500;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#D6006E;margin-bottom:16px;">Wonderschool. New Mexico</div>
+          <h3 style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:22px;line-height:1.15;letter-spacing:-0.3px;color:#231A4E;margin:0 0 14px;">Trust the handoff</h3>
+          <p style="font-size:15px;line-height:1.6;color:#231A4E;opacity:0.75;margin:0 0 20px;flex:1;">A co-branded self-serve flow that lets providers claim and maintain their own child care listing across a state partner and the marketplace.</p>
+          <div style="margin:0 0 20px;"><span style="font-size:13px;color:#231A4E;font-weight:500;"><strong style="font-weight:500;">Outcome:</strong> One flow serving a state partner and the marketplace.</span></div>
+          <span style="display:inline-flex;align-items:center;gap:6px;font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:#D6006E;line-height:1;"><span style="white-space:nowrap;">View case study</span><span style="font-size:14px;letter-spacing:0;">→</span></span>
+        </a>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:#FFF2EF;border-top:1px solid #F4DEDA;padding:120px 32px 100px;text-align:center;">
+    <h2 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(48px,7vw,84px);line-height:1.05;letter-spacing:-2px;color:#D6006E;margin:0 0 48px;">Let's keep<br>in touch</h2>
+    <div style="display:flex;gap:36px;justify-content:center;align-items:center;color:#231A4E;">
+      <a href="mailto:ccattebe@gmail.com" aria-label="Email" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"></rect><path d="M3.5 6.5l8.5 6 8.5-6"></path></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/caitlin-atteberry-b6901729/" target="_blank" aria-label="LinkedIn" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0Z"></path></svg>
+      </a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="reveal.js"></script>
+</body>
+</html>

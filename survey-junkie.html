@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Caitlin Atteberry. Product Designer.">
+<title>Survey Junkie | Caitlin Atteberry</title>
+<link rel="icon" type="image/svg+xml" href="ca-favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800;900&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#FFF2EF;-webkit-font-smoothing:antialiased;}
+  a{text-decoration:none;color:inherit;}
+  ::selection{background:#FEC8DE;color:#231A4E;}
+  [data-reveal]{opacity:0;}
+  .case-row,.feature-card{box-shadow:none;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease;}
+  .case-row:hover{transform:translateY(-6px);box-shadow:0 30px 64px -34px rgba(37,25,76,0.5);}
+  .case-row:hover .case-img{transform:scale(1.06);}
+  .feature-card:hover{transform:translateY(-6px);box-shadow:0 40px 84px -40px rgba(27,10,85,0.7);}
+  .feature-img{transform:rotateY(-23deg) rotateX(7deg) rotate(-1deg);transition:transform .55s cubic-bezier(.2,.7,.2,1);}
+  .feature-card:hover .feature-img{transform:rotateY(-19deg) rotateX(5deg) rotate(-1deg) scale(1.05);}
+  .t-rail{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:6px max(64px, calc((100vw - 1180px)/2 + 64px)) 24px;}
+  .t-rail::-webkit-scrollbar{display:none;}
+  .t-card{flex:0 0 clamp(340px,40vw,470px);scroll-snap-align:start;}
+  @media(max-width:900px){
+    nav{padding:22px 32px !important;}
+    header{padding:60px 32px !important;grid-template-columns:1fr !important;}
+    .work-section{padding:0 32px !important;}
+    .feature-card{grid-template-columns:1fr !important;padding:48px 32px !important;}
+    .cards-grid{grid-template-columns:1fr !important;}
+    footer{padding:80px 32px 60px !important;}
+  }
+</style>
+</head>
+<body>
+
+
+<div style="font-family:'Inter',sans-serif;color:#231A4E;overflow-x:hidden;background:#2A1E5C;">
+
+  <!-- NAVY HERO BLOCK (pinned) -->
+  <div style="position:sticky;top:0;z-index:1;background:#2A1E5C;">
+
+    <!-- NAV -->
+    <nav style="display:flex;align-items:center;justify-content:space-between;padding:30px 64px 10px;max-width:1320px;margin:0 auto;">
+      <a href="index.html" aria-label="Home" style="display:block;">
+        <svg width="44" height="63" viewBox="0 0 130 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="130" height="186" rx="16" fill="#1601B5"></rect>
+          <path d="M108.364 55.668H95.6818C94.9318 51.9659 93.6193 48.7136 91.7443 45.9111C89.9034 43.1086 87.6534 40.7559 84.9943 38.853C82.3693 36.9154 79.4545 35.4623 76.25 34.4935C73.0455 33.5247 69.7045 33.0404 66.2273 33.0404C59.8864 33.0404 54.142 34.6665 48.9943 37.9188C43.8807 41.1711 39.8068 45.963 36.7727 52.2946C33.7727 58.6261 32.2727 66.3936 32.2727 75.5968C32.2727 84.8001 33.7727 92.5675 36.7727 98.8991C39.8068 105.231 43.8807 110.023 48.9943 113.275C54.142 116.527 59.8864 118.153 66.2273 118.153C69.7045 118.153 73.0455 117.669 76.25 116.7C79.4545 115.731 82.3693 114.296 84.9943 112.393C87.6534 110.455 89.9034 108.085 91.7443 105.283C93.6193 102.445 94.9318 99.1932 95.6818 95.5257H108.364C107.409 100.958 105.67 105.819 103.148 110.109C100.625 114.399 97.4886 118.049 93.7386 121.06C89.9886 124.035 85.7784 126.301 81.108 127.858C76.4716 129.415 71.5114 130.194 66.2273 130.194C57.2955 130.194 49.3523 127.979 42.3977 123.551C35.4432 119.122 29.9716 112.825 25.983 104.66C21.9943 96.4945 20 86.8068 20 75.5968C20 64.3868 21.9943 54.6992 25.983 46.5339C29.9716 38.3686 35.4432 32.0716 42.3977 27.643C49.3523 23.2143 57.2955 21 66.2273 21C71.5114 21 76.4716 21.7785 81.108 23.3354C85.7784 24.8924 89.9886 27.1759 93.7386 30.186C97.4886 33.1615 100.625 36.7943 103.148 41.0846C105.67 45.3402 107.409 50.2013 108.364 55.668Z" fill="white"></path>
+          <path d="M33.2955 165H20L58.4545 58.7126H71.5455L110 165H96.7045L65.4091 75.5276H64.5909L33.2955 165Z" fill="white"></path>
+        </svg>
+      </a>
+      <div style="display:flex;gap:38px;font-family:'Lexend',sans-serif;font-weight:500;font-size:16px;">
+        <a href="index.html" style="color:#fff;transition:opacity .2s ease;">Home</a>
+        <a href="about.html" style="color:#fff;transition:opacity .2s ease;">About</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header style="max-width:1320px;margin:0 auto;padding:78px 64px 92px;">
+      <div data-reveal style="font-family:'Lexend',sans-serif;font-weight:500;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#fff;margin-bottom:30px;">DISQO</div>
+      <h1 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(38px,6vw,84px);line-height:0.96;letter-spacing:-3px;color:#fff;margin:0;max-width:15ch;">Creating a rewarding Survey Junkie</h1>
+    </header>
+  </div>
+
+  <!-- PINK CONTENT SHEET, scrolls up over the pinned navy hero -->
+  <div style="position:relative;z-index:2;background:#FFF2EF;border-radius:20px 20px 0 0;box-shadow:0 -26px 60px -18px rgba(18,7,56,0.5);">
+
+  <!-- OBJECTIVE / MY ROLE / TOOLS -->
+  <section style="max-width:1180px;margin:0 auto;padding:76px 56px 0;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:52px;">
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">Objective</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Redesign the redemption experience within a brand new SPA and native Android/iOS app using a new and evolving design system.</p>
+        </div>
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">My Role</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Interaction Design, Animation, &amp; Prototyping</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Usability Testing</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Visual Design</p>
+        </div>
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">Tools</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Maze <em>for</em> User Testing</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Figma <em>for</em> Prototyping</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Figjam <em>for</em> Workflowing</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- BODY -->
+  <main style="padding:24px 0 120px;">
+
+    <!-- BACKGROUND -->
+    <section style="max-width:640px;margin:0 auto;padding:60px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 44px;">Background</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Survey Junkie is a mobile and desktop app that delivers market research surveys for users to take and get paid for sharing their opinions. In 2021, the newly formed Consumer Design team embarked on a 1.5 year design and development project to completely transform Survey Junkie from a dated monolithic application to a design-system-based SPA, native Android, and iOS app. I had design ownership over the <strong style="font-weight:700;">Rewards</strong> section of Survey Junkie.</p>
+    </section>
+    <figure data-reveal style="max-width:980px;margin:56px auto 0;padding:0 32px;">
+      <img src="assets/survey-junkie-legacy-redemption.png" alt="Legacy Survey Junkie redemption page, desktop and mobile" style="width:100%;height:auto;display:block;">
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:620px;margin:22px auto 0;">The redemption page in Survey Junkie prior to redesign, an uninspired and transactional experience.</figcaption>
+    </figure>
+
+    <!-- PROJECT GOALS -->
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 56px;">Project Goals</h2>
+
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">Make rewards a top-level feature</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 48px;">In the legacy Monolith, Members couldn't see rewards until they hit 500 points, hidden behind an ephemeral "redeem now" button. The single biggest point of value in the app was invisible until very late in the journey. We made rewards front and center from day one.</p>
+
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">Streamline the redemption experience</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 48px;">Gift cards sat behind needless 2FA, bank transfer handed over sensitive information with little explanation, and the gift-card workflow booted Members out to a third-party site entirely. We set out to make redemption straightforward and to keep Members in-app end to end.</p>
+
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">Make the delightful experience actually delightful</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Getting rewarded for your time should feel like a moment of celebration, not a transaction. We brought delight to rewards through color, microcopy, and animation.</p>
+    </section>
+
+    <!-- PROCESS -->
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 56px;">Process</h2>
+
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">1. Audit &amp; analyze</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">I mapped every redemption path in Figma to show stakeholders exactly where the friction lived. Visa redemption alone took <strong style="font-weight:700;">24 steps</strong>, gift cards took 15, and even the "simpler" bank transfer and PayPal paths took 8, all bouncing Members between Survey Junkie, their email, and an external vendor's site just to cash out. Every one of those handoffs diluted the brand and confused the Member.</p>
+    </section>
+    <figure data-reveal style="max-width:1040px;margin:48px auto 0;padding:0 32px;">
+      <img src="assets/survey-junkie-workflow-audit.png" alt="Workflow audit diagram showing Visa, gift card, bank transfer, and PayPal redemption paths" style="width:100%;height:auto;display:block;">
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:660px;margin:22px auto 0;">The workflow audit, mapping every redemption path: Visa (24 steps), gift card (15), bank transfer and PayPal (8 each).</figcaption>
+    </figure>
+    <section style="max-width:640px;margin:0 auto;padding:48px 32px 0;">
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">I also talked with our Member Support team to understand the top support issues that Members were reaching out to support to remedy. The Member Support team was handling hundreds of tickets per week due to the unclear and confusing redemption experience in the Monolith.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">2. Design &amp; refine</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Using our new design system, I created a streamlined redemption experience for each reward type for SPA (mobile, tablet, and desktop) and native iOS and Android. We went through many iterations of the points visualization and rewards page until we felt the design was elegant, concise, and delightful.</p>
+    </section>
+    <figure data-reveal style="max-width:1040px;margin:48px auto 0;padding:0 32px;">
+      <img src="assets/survey-junkie-design-evolution.png" alt="Design evolution of the rewards page across iterations" style="width:100%;height:auto;display:block;">
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:620px;margin:22px auto 0;">Design evolution of the rewards page and points visualization.</figcaption>
+    </figure>
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">3. Test &amp; refine</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">We ran first-time and second-time unmoderated usability tests to see where Members still got tripped up once the new workflow stopped being novel, and refined from there. Once the redesign was stable, we A/B tested it in production against the legacy Monolith for a real, apples-to-apples read on engagement and retention.</p>
+    </section>
+
+    <!-- RESULTS -->
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">Results</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">The redesign held up against the Monolith on every metric we tracked. Redemption completion rose as paths that ran up to 24 steps collapsed into a single in-app flow, retention improved as rewards moved from a hidden, late-stage reveal to a top-level feature, and Member Support's redemption-related ticket volume dropped as clearer status, error states, and in-app tracking replaced the guesswork of the old flow.</p>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 44px;">Conclusion</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">As a newly formed Product Design team, we weren't just redesigning a rewards page, we were establishing the brand and design system while building the platform underneath it at the same time. Turning a redemption path that once ran up to 24 steps into something Members trust enough to return to is the clearest proof that the bet paid off.</p>
+    </section>
+    <figure data-reveal style="max-width:1040px;margin:56px auto 0;padding:0 32px;">
+      <img src="assets/survey-junkie-final-product.png" alt="Final Survey Junkie rewards experience, desktop and mobile" style="width:100%;height:auto;display:block;">
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:660px;margin:22px auto 0;">The final Survey Junkie rewards experience: a changing background animation to indicate progress towards cash out, and a celebratory moment once you hit 500 points.</figcaption>
+    </figure>
+
+    <!-- HOME BUTTON -->
+    <div style="text-align:center;margin-top:96px;">
+      <a href="index.html" style="display:inline-flex;align-items:center;font-family:'Unbounded',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.6px;color:#fff;background:#D6006E;padding:18px 40px;border-radius:999px;transition:transform .2s ease,box-shadow .2s ease;">Back to home</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:transparent;border-top:1px solid #F4DEDA;padding:120px 32px 100px;text-align:center;">
+    <h2 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(34px,5vw,62px);line-height:1.05;letter-spacing:-2px;color:#D6006E;margin:0 0 48px;">Let's keep<br>in touch</h2>
+    <div style="display:flex;gap:36px;justify-content:center;align-items:center;color:#231A4E;">
+      <a href="mailto:ccattebe@gmail.com" aria-label="Email" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3.5 6.5l8.5 6 8.5-6"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/caitlin-atteberry-b6901729/" target="_blank" aria-label="LinkedIn" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  </div>
+</div>
+
+<script src="reveal.js"></script>
+</body>
+</html>

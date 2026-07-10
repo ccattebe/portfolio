@@ -1,0 +1,15 @@
+{
+  "outputDirectory": ".",
+  "buildCommand": "",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/survey-junkie", "destination": "/survey-junkie.html" },
+    { "source": "/goal-setting", "destination": "/goal-setting.html" },
+    { "source": "/ccms", "destination": "/ccms.html" },
+    { "source": "/nm-claim-flow", "destination": "/nm-claim-flow.html" },
+    { "source": "/design-system", "destination": "/design-system.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/ai-tooling", "destination": "/ai-tooling.html" }
+  ]
+}

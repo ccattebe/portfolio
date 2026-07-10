@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Caitlin Atteberry. Product Designer.">
+<title>Design System | Caitlin Atteberry</title>
+<link rel="icon" type="image/svg+xml" href="ca-favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800;900&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#FFF2EF;-webkit-font-smoothing:antialiased;}
+  a{text-decoration:none;color:inherit;}
+  ::selection{background:#FEC8DE;color:#231A4E;}
+  [data-reveal]{opacity:0;}
+  .case-row,.feature-card{box-shadow:none;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease;}
+  .case-row:hover{transform:translateY(-6px);box-shadow:0 30px 64px -34px rgba(37,25,76,0.5);}
+  .case-row:hover .case-img{transform:scale(1.06);}
+  .feature-card:hover{transform:translateY(-6px);box-shadow:0 40px 84px -40px rgba(27,10,85,0.7);}
+  .feature-img{transform:rotateY(-23deg) rotateX(7deg) rotate(-1deg);transition:transform .55s cubic-bezier(.2,.7,.2,1);}
+  .feature-card:hover .feature-img{transform:rotateY(-19deg) rotateX(5deg) rotate(-1deg) scale(1.05);}
+  .t-rail{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:6px max(64px, calc((100vw - 1180px)/2 + 64px)) 24px;}
+  .t-rail::-webkit-scrollbar{display:none;}
+  .t-card{flex:0 0 clamp(340px,40vw,470px);scroll-snap-align:start;}
+  @media(max-width:900px){
+    nav{padding:22px 32px !important;}
+    header{padding:60px 32px !important;grid-template-columns:1fr !important;}
+    .work-section{padding:0 32px !important;}
+    .feature-card{grid-template-columns:1fr !important;padding:48px 32px !important;}
+    .cards-grid{grid-template-columns:1fr !important;}
+    footer{padding:80px 32px 60px !important;}
+  }
+</style>
+</head>
+<body>
+
+
+<div style="font-family:'Inter',sans-serif;color:#231A4E;overflow-x:hidden;background:#2A1E5C;">
+
+  <!-- NAVY HERO BLOCK (pinned) -->
+  <div style="position:sticky;top:0;z-index:1;background:#2A1E5C;">
+    <nav style="display:flex;align-items:center;justify-content:space-between;padding:30px 64px 10px;max-width:1320px;margin:0 auto;">
+      <a href="index.html" aria-label="Home" style="display:block;">
+        <svg width="44" height="63" viewBox="0 0 130 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="130" height="186" rx="16" fill="#1601B5"></rect>
+          <path d="M108.364 55.668H95.6818C94.9318 51.9659 93.6193 48.7136 91.7443 45.9111C89.9034 43.1086 87.6534 40.7559 84.9943 38.853C82.3693 36.9154 79.4545 35.4623 76.25 34.4935C73.0455 33.5247 69.7045 33.0404 66.2273 33.0404C59.8864 33.0404 54.142 34.6665 48.9943 37.9188C43.8807 41.1711 39.8068 45.963 36.7727 52.2946C33.7727 58.6261 32.2727 66.3936 32.2727 75.5968C32.2727 84.8001 33.7727 92.5675 36.7727 98.8991C39.8068 105.231 43.8807 110.023 48.9943 113.275C54.142 116.527 59.8864 118.153 66.2273 118.153C69.7045 118.153 73.0455 117.669 76.25 116.7C79.4545 115.731 82.3693 114.296 84.9943 112.393C87.6534 110.455 89.9034 108.085 91.7443 105.283C93.6193 102.445 94.9318 99.1932 95.6818 95.5257H108.364C107.409 100.958 105.67 105.819 103.148 110.109C100.625 114.399 97.4886 118.049 93.7386 121.06C89.9886 124.035 85.7784 126.301 81.108 127.858C76.4716 129.415 71.5114 130.194 66.2273 130.194C57.2955 130.194 49.3523 127.979 42.3977 123.551C35.4432 119.122 29.9716 112.825 25.983 104.66C21.9943 96.4945 20 86.8068 20 75.5968C20 64.3868 21.9943 54.6992 25.983 46.5339C29.9716 38.3686 35.4432 32.0716 42.3977 27.643C49.3523 23.2143 57.2955 21 66.2273 21C71.5114 21 76.4716 21.7785 81.108 23.3354C85.7784 24.8924 89.9886 27.1759 93.7386 30.186C97.4886 33.1615 100.625 36.7943 103.148 41.0846C105.67 45.3402 107.409 50.2013 108.364 55.668Z" fill="white"></path>
+          <path d="M33.2955 165H20L58.4545 58.7126H71.5455L110 165H96.7045L65.4091 75.5276H64.5909L33.2955 165Z" fill="white"></path>
+        </svg>
+      </a>
+      <div style="display:flex;gap:38px;font-family:'Lexend',sans-serif;font-weight:500;font-size:16px;">
+        <a href="index.html" style="color:#fff;transition:opacity .2s ease;">Home</a>
+        <a href="about.html" style="color:#fff;transition:opacity .2s ease;">About</a>
+      </div>
+    </nav>
+    <header style="max-width:1320px;margin:0 auto;padding:78px 64px 92px;">
+      <div data-reveal style="font-family:'Lexend',sans-serif;font-weight:500;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#fff;margin-bottom:30px;">Wonderschool. Design Systems</div>
+      <h1 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(38px,6vw,84px);line-height:0.96;letter-spacing:-3px;color:#fff;margin:0;max-width:15ch;">Making the design system visible</h1>
+    </header>
+  </div>
+
+  <!-- PINK CONTENT SHEET -->
+  <div style="position:relative;z-index:2;background:#FFF2EF;border-radius:20px 20px 0 0;box-shadow:0 -26px 60px -18px rgba(18,7,56,0.5);">
+
+  <!-- OBJECTIVE / MY ROLE / TOOLS -->
+  <section style="max-width:1180px;margin:0 auto;padding:76px 56px 0;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:52px;">
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">Objective</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Turn invisible component drift into a diagnostic tool the whole team can see, agree on, and act from.</p>
+        </div>
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">My Role</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Systems Audit &amp; Analysis</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Tooling &amp; Storybook Design</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Migration Planning</p>
+        </div>
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">Stack</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Phoenix LiveView <em>+</em> React</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Storybook</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Chromatic <em>for</em> Visual Regression</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- BODY -->
+  <main style="padding:24px 0 120px;">
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 44px;">Years in the making</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 28px;">None of this drift happened overnight, it was years of accumulated tech debt finally coming due. Components had scattered across the codebase with nobody tracking where they lived or whether a "new" one quietly duplicated an old one. Semantic tokens and primitive values got used interchangeably depending on who wrote the code and when, so the same visual intent could resolve to three different hex values in three different files. Government-specific themes, built for state partnerships like New Mexico's, got applied willy-nilly wherever a deadline demanded it, with no system for when a theme override was appropriate versus when it should have been a real token. The result: no consistent look and feel across our four different platforms, React web, LiveView web, iOS, and Android, each drifting further from the others with every release.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 44px;">The spark</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 28px;">It started with a small, honest question: <em>"Why does our <strong style="font-weight:700;">data_table</strong> look different from <strong style="font-weight:700;">table</strong> in Storybook? They should be the same."</em> Pulling that thread revealed they were never the same component. They were three separate tables, <strong style="font-weight:700;">data_table</strong>, <strong style="font-weight:700;">table</strong>, and a newer <strong style="font-weight:700;">table_new</strong>, each hand-built at a different time with different styling. Nothing in the code kept them in sync.</p>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">That one question exposed a bigger truth: on the LiveView side of our product, components had quietly drifted apart and nobody could see it, because each component lived alone on its own page or buried inside a single product screen. There was no place to line them up side by side.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">Two systems, two speeds</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Wonderschool builds UI on two stacks that share the same visual design tokens (colors, spacing, type) but maintain their components very differently.</p>
+    </section>
+    <section data-reveal style="max-width:900px;margin:40px auto 0;padding:0 32px;display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+      <div style="background:#fff;border-radius:12px;padding:32px 30px;box-shadow:0 14px 40px -26px rgba(37,25,76,0.5);">
+        <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#1F8A5B;margin-bottom:14px;">React. healthy</div>
+        <p style="font-size:15px;line-height:1.7;margin:0;color:#231A4E;"><strong style="font-weight:700;">~82 stories, ~98% coverage.</strong> One consolidated library, public Storybook, Chromatic visual-regression, Figma links, and accessibility checks. It avoided drift by consolidating early.</p>
+      </div>
+      <div style="background:#fff;border-radius:12px;padding:32px 30px;box-shadow:0 14px 40px -26px rgba(37,25,76,0.5);">
+        <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#D6006E;margin-bottom:14px;">LiveView. drifting</div>
+        <p style="font-size:15px;line-height:1.7;margin:0;color:#231A4E;"><strong style="font-weight:700;">~12 stories.</strong> Two parallel component sets: an auto-loading legacy set and an intentional one you must import by hand. Pages silently fall back to the old components, drift was the <em>default behavior</em>, not a one-off mistake.</p>
+      </div>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">What we built</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 12px;">We turned the LiveView Storybook into a <strong style="font-weight:700;">diagnostic tool</strong>, not just a component showroom, two new pages, now in an open pull request.</p>
+    </section>
+
+    <!-- STAT GRID -->
+    <section data-reveal style="max-width:900px;margin:48px auto 0;padding:0 32px;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;">
+        <div style="background:#2A1E5C;border-radius:10px;padding:30px 22px;text-align:center;">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:42px;line-height:1;color:#fff;">27</div>
+          <div style="font-size:13px;color:#B9AEE6;margin-top:10px;line-height:1.4;">blessed components</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:30px 22px;text-align:center;box-shadow:0 14px 40px -28px rgba(37,25,76,0.5);">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:42px;line-height:1;color:#D6006E;">16</div>
+          <div style="font-size:13px;color:#231A4E;margin-top:10px;line-height:1.4;">invisible, no Storybook story</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:30px 22px;text-align:center;box-shadow:0 14px 40px -28px rgba(37,25,76,0.5);">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:42px;line-height:1;color:#D6006E;">3</div>
+          <div style="font-size:13px;color:#231A4E;margin-top:10px;line-height:1.4;">separate table implementations</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:30px 22px;text-align:center;box-shadow:0 14px 40px -28px rgba(37,25,76,0.5);">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:42px;line-height:1;color:#D6006E;">17</div>
+          <div style="font-size:13px;color:#231A4E;margin-top:10px;line-height:1.4;">legacy components still in use</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:30px 22px;text-align:center;box-shadow:0 14px 40px -28px rgba(37,25,76,0.5);">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:42px;line-height:1;color:#D6006E;">~11</div>
+          <div style="font-size:13px;color:#231A4E;margin-top:10px;line-height:1.4;">per-app copies of headers &amp; nav</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:30px 22px;text-align:center;box-shadow:0 14px 40px -28px rgba(37,25,76,0.5);">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:42px;line-height:1;color:#D6006E;">309</div>
+          <div style="font-size:13px;color:#231A4E;margin-top:10px;line-height:1.4;">files using the legacy <em>icon</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">1. Component Audit: a census of the system</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">At a glance: what components exist, where each lives in the code, whether it has a story yet, and where the same UI has been built more than once. It surfaced the duplicate tables, three copies of the form component, a set of duplicate "Endor" components, and the legacy usage counts above. Every stat box is clickable, a number like "16 invisible" drills straight into the list it represents.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">2. Drift Gallery: the visual proof</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">It renders each deprecated component directly beside its blessed replacement, old button vs. new button, old input vs. new input, old table vs. new table, so the divergence is something you <em>see</em>, not just read. Where a component genuinely can't be shown in isolation (it needs a logged-in user, a live query, or app context) we listed it honestly with the reason rather than faking it.</p>
+    </section>
+    <figure data-reveal style="max-width:820px;margin:48px auto 0;padding:0 32px;">
+      <div style="background:#fff;border-radius:10px;box-shadow:0 24px 60px -28px rgba(37,25,76,0.45);padding:32px 30px;display:flex;flex-direction:column;gap:20px;">
+
+        <div style="border:1px solid #EDE6F2;border-radius:8px;padding:20px 22px;">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:14px;color:#231A4E;margin-bottom:14px;">Button</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+            <div>
+              <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.5px;text-transform:uppercase;color:#B5502E;margin-bottom:10px;">Deprecated. CoreComponents</div>
+              <div style="display:inline-block;background:#3B6FE0;color:#fff;font-size:13px;font-weight:600;padding:9px 20px;border-radius:6px;">Save</div>
+            </div>
+            <div>
+              <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.5px;text-transform:uppercase;color:#1F8A5B;margin-bottom:10px;">Blessed. DesignSystem</div>
+              <div style="display:inline-block;background:#3B6FE0;color:#fff;font-size:13px;font-weight:700;padding:9px 22px;border-radius:8px;">Save</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="border:1px solid #EDE6F2;border-radius:8px;padding:20px 22px;">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:14px;color:#231A4E;margin-bottom:14px;">Text input</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+            <div>
+              <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.5px;text-transform:uppercase;color:#B5502E;margin-bottom:10px;">Deprecated</div>
+              <div style="font-size:11px;color:#555;margin-bottom:4px;">Email</div>
+              <div style="border:1px solid #ccc;border-radius:3px;height:26px;"></div>
+            </div>
+            <div>
+              <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.5px;text-transform:uppercase;color:#1F8A5B;margin-bottom:10px;">Blessed</div>
+              <div style="font-size:11px;color:#555;margin-bottom:4px;">Email</div>
+              <div style="border:1px solid #C6CEDC;border-radius:7px;height:26px;display:flex;align-items:center;padding:0 8px;font-size:10px;color:#9aa0ad;">you@example.com</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="border:1px solid #EDE6F2;border-radius:8px;padding:20px 22px;">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:14px;color:#231A4E;margin-bottom:14px;">Table</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+            <div>
+              <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.5px;text-transform:uppercase;color:#B5502E;margin-bottom:10px;">Deprecated</div>
+              <div style="font-size:10px;color:#231A4E;line-height:2;">
+                <div style="display:flex;justify-content:space-between;color:#888;border-bottom:1px solid #eee;padding-bottom:3px;"><span>Name</span><span>Role</span></div>
+                <div style="display:flex;justify-content:space-between;"><span>Alice Johnson</span><span>Admin</span></div>
+                <div style="display:flex;justify-content:space-between;"><span>Bob Smith</span><span>Editor</span></div>
+              </div>
+            </div>
+            <div>
+              <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.5px;text-transform:uppercase;color:#1F8A5B;margin-bottom:10px;">Blessed</div>
+              <div style="font-size:10px;color:#231A4E;line-height:2.1;">
+                <div style="display:flex;justify-content:space-between;color:#888;border-bottom:1px solid #eee;padding-bottom:3px;"><span>Name</span><span>Role</span></div>
+                <div style="display:flex;justify-content:space-between;font-weight:600;"><span>Alice Johnson</span><span style="font-weight:400;">Admin</span></div>
+                <div style="display:flex;justify-content:space-between;font-weight:600;"><span>Bob Smith</span><span style="font-weight:400;">Editor</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="border:1px solid #EDE6F2;border-radius:8px;padding:20px 22px;">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:14px;color:#231A4E;margin-bottom:4px;">Modal</div>
+          <div style="font-size:11px;color:#8b88a0;margin-bottom:14px;">DesignSystem.modal, click to open</div>
+          <div style="display:inline-block;background:#3B6FE0;color:#fff;font-size:13px;font-weight:700;padding:9px 20px;border-radius:8px;margin-bottom:14px;">Open blessed modal</div>
+          <p style="font-size:11px;color:#8b88a0;line-height:1.6;margin:0;">The deprecated CoreComponents.modal and slim_modal aren't shown live here: they read undeclared internal state and only render correctly inside a real app page. That fragility is itself a reason they're deprecated.</p>
+        </div>
+
+        <div style="border-top:1px solid #F1E3DE;padding-top:18px;">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:13px;color:#231A4E;margin-bottom:2px;">Duplicate: pagination</div>
+          <div style="border:1px solid #EDE6F2;border-radius:8px;padding:18px 20px;margin-top:12px;">
+            <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:13px;color:#231A4E;margin-bottom:2px;">Endor.Pagination vs CoreWeb.Pagination</div>
+            <div style="font-size:11px;color:#8b88a0;margin-bottom:14px;">Two pagination components for the same job (showing page 2 of 5)</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+              <div>
+                <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.5px;text-transform:uppercase;color:#B5502E;margin-bottom:10px;">Deprecated. CoreComponents</div>
+                <div style="font-size:10px;color:#8b88a0;margin-bottom:8px;">Showing 11 to 20 of 42 entries</div>
+                <div style="display:flex;gap:5px;font-size:10px;color:#231A4E;">
+                  <span style="border:1px solid #ddd;border-radius:4px;padding:3px 7px;">‹</span>
+                  <span style="border:1px solid #ddd;border-radius:4px;padding:3px 7px;">1</span>
+                  <span style="border:1px solid #3B6FE0;color:#3B6FE0;border-radius:4px;padding:3px 7px;">2</span>
+                  <span style="border:1px solid #ddd;border-radius:4px;padding:3px 7px;">3</span>
+                  <span style="border:1px solid #ddd;border-radius:4px;padding:3px 7px;">4</span>
+                  <span style="border:1px solid #ddd;border-radius:4px;padding:3px 7px;">5</span>
+                  <span style="border:1px solid #ddd;border-radius:4px;padding:3px 7px;">›</span>
+                </div>
+              </div>
+              <div>
+                <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.5px;text-transform:uppercase;color:#1F8A5B;margin-bottom:10px;">Blessed. DesignSystem</div>
+                <div style="font-size:10px;color:#8b88a0;margin-bottom:8px;">Showing 11–20 of 42 records</div>
+                <div style="display:flex;gap:5px;font-size:10px;color:#231A4E;">
+                  <span style="padding:3px 7px;">‹</span>
+                  <span style="padding:3px 7px;">1</span>
+                  <span style="background:#3B6FE0;color:#fff;border-radius:5px;padding:3px 8px;font-weight:700;">2</span>
+                  <span style="padding:3px 7px;">3</span>
+                  <span style="padding:3px 7px;">4</span>
+                  <span style="padding:3px 7px;">5</span>
+                  <span style="padding:3px 7px;">›</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:660px;margin:22px auto 0;">The Drift Gallery (recreated here): deprecated components rendered live beside their blessed replacements, plus a real example of the duplication problem, two pagination components built for the same job.</figcaption>
+    </figure>
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">3. Token documentation: making the invisible layer legible</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Underneath every component sits a three-layer token system, primitive values, semantic tokens, and component tokens, that most of the team had never actually seen laid out. I built a documentation page that traces one color, blue, through all three layers side by side, then lists the full primitive palette and every semantic token (background, text, border, icon, button state) with its hex value and where it's used. Both the React and LiveView Storybooks read from this same source, so the page closes the loop the whole audit was about: one shared vocabulary, visible to everyone, not just the two people who happened to write it.</p>
+    </section>
+    <figure data-reveal style="max-width:820px;margin:48px auto 0;padding:0 32px;">
+      <div style="background:#fff;border-radius:10px;box-shadow:0 24px 60px -28px rgba(37,25,76,0.45);padding:36px 34px;">
+        <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#9B7FA8;margin-bottom:10px;">Color tokens, in three layers</div>
+        <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;color:#231A4E;margin-bottom:20px;">One blue, traced through all three</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:26px;">
+          <div style="border:1px solid #EDE6F2;border-radius:8px;padding:14px;">
+            <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.6px;text-transform:uppercase;color:#9B7FA8;margin-bottom:8px;">Primitive</div>
+            <div style="height:34px;border-radius:5px;background:#3B6FE0;margin-bottom:6px;"></div>
+            <div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;color:#8b88a0;">blue.600</div>
+          </div>
+          <div style="border:1px solid #EDE6F2;border-radius:8px;padding:14px;">
+            <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.6px;text-transform:uppercase;color:#9B7FA8;margin-bottom:8px;">Semantic</div>
+            <div style="height:34px;border-radius:5px;background:#3B6FE0;margin-bottom:6px;"></div>
+            <div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;color:#8b88a0;">bg.action.primary</div>
+          </div>
+          <div style="border:1px solid #EDE6F2;border-radius:8px;padding:14px;">
+            <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.6px;text-transform:uppercase;color:#9B7FA8;margin-bottom:8px;">Component</div>
+            <div style="height:34px;border-radius:5px;background:#3B6FE0;margin-bottom:6px;"></div>
+            <div style="font-family:ui-monospace,Menlo,monospace;font-size:10px;color:#8b88a0;">button.bg.primary</div>
+          </div>
+        </div>
+        <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#9B7FA8;margin-bottom:10px;">The primitive palette</div>
+        <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:5px;margin-bottom:20px;">
+          <div style="height:24px;border-radius:3px;background:#EAF0FD;"></div><div style="height:24px;border-radius:3px;background:#C7D8FA;"></div><div style="height:24px;border-radius:3px;background:#8FADF3;"></div><div style="height:24px;border-radius:3px;background:#5A85E8;"></div><div style="height:24px;border-radius:3px;background:#3B6FE0;"></div><div style="height:24px;border-radius:3px;background:#2A54B8;"></div><div style="height:24px;border-radius:3px;background:#1E3F8F;"></div><div style="height:24px;border-radius:3px;background:#152C66;"></div>
+        </div>
+        <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#9B7FA8;margin-bottom:10px;">Semantic tokens</div>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#231A4E;"><span style="width:16px;height:16px;border-radius:4px;background:#3B6FE0;flex:none;"></span><span style="font-family:ui-monospace,Menlo,monospace;color:#8b88a0;">bg.action.primary</span></div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#231A4E;"><span style="width:16px;height:16px;border-radius:4px;background:#1F8A5B;flex:none;"></span><span style="font-family:ui-monospace,Menlo,monospace;color:#8b88a0;">bg.status.success</span></div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:12px;color:#231A4E;"><span style="width:16px;height:16px;border-radius:4px;background:#D6006E;flex:none;"></span><span style="font-family:ui-monospace,Menlo,monospace;color:#8b88a0;">bg.status.danger</span></div>
+        </div>
+      </div>
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:620px;margin:22px auto 0;">The token documentation page (recreated here): one blue, traced through primitive, semantic, and component layers, with the full primitive palette and semantic token list beneath.</figcaption>
+    </figure>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">Where this goes next</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 24px;">The audit turns a vague sense of "our components are inconsistent" into a concrete, prioritized worklist: build stories for the 16 invisible components, consolidate the duplicate tables, forms, and Endor parallels onto a single blessed version, and retire the legacy set in order of effort, small contained orphans first, the 309-file icon campaign last.</p>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">The React Storybook is the model for where LiveView should land: public deployment, visual-regression, Figma links, accessibility checks. Because both stacks already share the same tokens, consolidating each side moves us toward genuine cross-stack consistency.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">Why it matters</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Drift becomes visible, and therefore preventable, you can't fix what you can't see. It creates a shared map designers, PMs, and engineers can agree on. It turns "our UI feels inconsistent" into a ranked list with real usage numbers behind it. And it compounds: every story added and every duplicate retired makes the next inconsistency easier to spot. What began as one puzzling table is now a durable, shareable tool for keeping the entire LiveView design system honest.</p>
+    </section>
+
+    <div style="text-align:center;margin-top:96px;">
+      <a href="index.html" style="display:inline-flex;align-items:center;font-family:'Unbounded',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.6px;color:#fff;background:#D6006E;padding:18px 40px;border-radius:999px;transition:transform .2s ease,box-shadow .2s ease;">Back to home</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:transparent;border-top:1px solid #F4DEDA;padding:120px 32px 100px;text-align:center;">
+    <h2 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(34px,5vw,62px);line-height:1.05;letter-spacing:-2px;color:#D6006E;margin:0 0 48px;">Let's keep<br>in touch</h2>
+    <div style="display:flex;gap:36px;justify-content:center;align-items:center;color:#231A4E;">
+      <a href="mailto:ccattebe@gmail.com" aria-label="Email" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3.5 6.5l8.5 6 8.5-6"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/caitlin-atteberry-b6901729/" target="_blank" aria-label="LinkedIn" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  </div>
+</div>
+
+<script src="reveal.js"></script>
+</body>
+</html>

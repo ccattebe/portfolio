@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Caitlin Atteberry. Product Designer.">
+<title>CCMS 3 | Caitlin Atteberry</title>
+<link rel="icon" type="image/svg+xml" href="ca-favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800;900&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#FFF2EF;-webkit-font-smoothing:antialiased;}
+  a{text-decoration:none;color:inherit;}
+  ::selection{background:#FEC8DE;color:#231A4E;}
+  [data-reveal]{opacity:0;}
+  .case-row,.feature-card{box-shadow:none;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease;}
+  .case-row:hover{transform:translateY(-6px);box-shadow:0 30px 64px -34px rgba(37,25,76,0.5);}
+  .case-row:hover .case-img{transform:scale(1.06);}
+  .feature-card:hover{transform:translateY(-6px);box-shadow:0 40px 84px -40px rgba(27,10,85,0.7);}
+  .feature-img{transform:rotateY(-23deg) rotateX(7deg) rotate(-1deg);transition:transform .55s cubic-bezier(.2,.7,.2,1);}
+  .feature-card:hover .feature-img{transform:rotateY(-19deg) rotateX(5deg) rotate(-1deg) scale(1.05);}
+  .t-rail{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:6px max(64px, calc((100vw - 1180px)/2 + 64px)) 24px;}
+  .t-rail::-webkit-scrollbar{display:none;}
+  .t-card{flex:0 0 clamp(340px,40vw,470px);scroll-snap-align:start;}
+  @media(max-width:900px){
+    nav{padding:22px 32px !important;}
+    header{padding:60px 32px !important;grid-template-columns:1fr !important;}
+    .work-section{padding:0 32px !important;}
+    .feature-card{grid-template-columns:1fr !important;padding:48px 32px !important;}
+    .cards-grid{grid-template-columns:1fr !important;}
+    footer{padding:80px 32px 60px !important;}
+  }
+</style>
+</head>
+<body>
+
+
+<div style="font-family:'Inter',sans-serif;color:#231A4E;overflow-x:hidden;background:#2A1E5C;">
+
+  <!-- NAVY HERO BLOCK (pinned) -->
+  <div style="position:sticky;top:0;z-index:1;background:#2A1E5C;">
+    <nav style="display:flex;align-items:center;justify-content:space-between;padding:30px 64px 10px;max-width:1320px;margin:0 auto;">
+      <a href="index.html" aria-label="Home" style="display:block;">
+        <svg width="44" height="63" viewBox="0 0 130 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="130" height="186" rx="16" fill="#1601B5"></rect>
+          <path d="M108.364 55.668H95.6818C94.9318 51.9659 93.6193 48.7136 91.7443 45.9111C89.9034 43.1086 87.6534 40.7559 84.9943 38.853C82.3693 36.9154 79.4545 35.4623 76.25 34.4935C73.0455 33.5247 69.7045 33.0404 66.2273 33.0404C59.8864 33.0404 54.142 34.6665 48.9943 37.9188C43.8807 41.1711 39.8068 45.963 36.7727 52.2946C33.7727 58.6261 32.2727 66.3936 32.2727 75.5968C32.2727 84.8001 33.7727 92.5675 36.7727 98.8991C39.8068 105.231 43.8807 110.023 48.9943 113.275C54.142 116.527 59.8864 118.153 66.2273 118.153C69.7045 118.153 73.0455 117.669 76.25 116.7C79.4545 115.731 82.3693 114.296 84.9943 112.393C87.6534 110.455 89.9034 108.085 91.7443 105.283C93.6193 102.445 94.9318 99.1932 95.6818 95.5257H108.364C107.409 100.958 105.67 105.819 103.148 110.109C100.625 114.399 97.4886 118.049 93.7386 121.06C89.9886 124.035 85.7784 126.301 81.108 127.858C76.4716 129.415 71.5114 130.194 66.2273 130.194C57.2955 130.194 49.3523 127.979 42.3977 123.551C35.4432 119.122 29.9716 112.825 25.983 104.66C21.9943 96.4945 20 86.8068 20 75.5968C20 64.3868 21.9943 54.6992 25.983 46.5339C29.9716 38.3686 35.4432 32.0716 42.3977 27.643C49.3523 23.2143 57.2955 21 66.2273 21C71.5114 21 76.4716 21.7785 81.108 23.3354C85.7784 24.8924 89.9886 27.1759 93.7386 30.186C97.4886 33.1615 100.625 36.7943 103.148 41.0846C105.67 45.3402 107.409 50.2013 108.364 55.668Z" fill="white"></path>
+          <path d="M33.2955 165H20L58.4545 58.7126H71.5455L110 165H96.7045L65.4091 75.5276H64.5909L33.2955 165Z" fill="white"></path>
+        </svg>
+      </a>
+      <div style="display:flex;gap:38px;font-family:'Lexend',sans-serif;font-weight:500;font-size:16px;">
+        <a href="index.html" style="color:#fff;transition:opacity .2s ease;">Home</a>
+        <a href="about.html" style="color:#fff;transition:opacity .2s ease;">About</a>
+      </div>
+    </nav>
+    <header style="max-width:1320px;margin:0 auto;padding:78px 64px 92px;">
+      <div data-reveal style="font-family:'Lexend',sans-serif;font-weight:500;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#fff;margin-bottom:30px;">Wonderschool Core. Provider Platform</div>
+      <h1 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(38px,6vw,84px);line-height:0.96;letter-spacing:-3px;color:#fff;margin:0 0 22px;max-width:15ch;">Designing a faster path to paid</h1>
+      <p data-reveal style="font-size:16px;line-height:1.6;color:rgba(255,255,255,0.72);margin:0;max-width:46ch;">I designed and coded this prototype myself, end to end, with Claude Code. It's still in progress: the model and UI for a rebuild that hasn't shipped yet.</p>
+    </header>
+  </div>
+
+  <!-- PINK CONTENT SHEET -->
+  <div style="position:relative;z-index:2;background:#FFF2EF;border-radius:20px 20px 0 0;box-shadow:0 -26px 60px -18px rgba(18,7,56,0.5);">
+
+  <!-- OBJECTIVE / MY ROLE / TOOLS -->
+  <section style="max-width:1180px;margin:0 auto;padding:76px 56px 0;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:52px;">
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">Objective</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Rebuild the child care management system around an apply → review → accept model, so providers control who lands on their roster.</p>
+        </div>
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">My Role</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Product Design</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Information Architecture</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Prototyping</p>
+        </div>
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">Context</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Surface: Full platform rebuild</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Prototype: ccms-3</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Tool: Figma</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- BODY -->
+  <main style="padding:24px 0 120px;">
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">The problem</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">CCMS grew up around an "auto-enroll" model: a family's information flowing in essentially <em>became</em> a student. That made the roster the catch-all for everyone at every stage, blurred the line between a lead and an enrolled child, and gave providers little control over who landed where.</p>
+    </section>
+
+    <section data-reveal style="max-width:720px;margin:48px auto 0;padding:0 32px;">
+      <div style="background:#2A1E5C;border-radius:12px;padding:36px 38px;">
+        <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#FF8FBE;margin-bottom:14px;">The core hypothesis</div>
+        <p style="font-size:16px;line-height:1.7;color:#EDE7FB;margin:0;">Reverse the flow. Interested families apply, pay a deposit to claim the spot, the provider reviews and accepts, and only then does the family complete the full profile. Families take ownership earlier, providers get a real decision point, and the data model stops conflating "maybe" with "enrolled." There's a second bet baked into that sequencing too: the sooner a family is on billing, the stickier the relationship, both to the provider and to the product.</p>
+      </div>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">What I designed</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">A new app shell plus a fully built-out flagship area spanning the provider side and the family side.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">Information architecture</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">A persistent sidebar splits into daily-work nav (Home, Interested Families, Enrolled Students, Program Settings) and a pinned guidance tool (Tuition Coaching). The deliberate move: <strong style="font-weight:700;">Interested Families and Enrolled Students are separate destinations.</strong> That single split is the whole thesis made navigable, leads live in one place, your roster in another, and nothing crosses over without a provider saying yes.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">The leads model</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Every lead is one row with a status that walks a clear track: interested in a tour → invited to enroll → applied → (provider accepts) → moves to Enrolled Students. A detail drawer shows the family's children, a chronological activity timeline, contact info, and the accept-and-enroll action. Provisional invites, a family recognized only by the email or phone they were invited at, are handled, because real intake is messy before it's tidy.</p>
+    </section>
+
+    <figure data-reveal style="max-width:980px;margin:48px auto 0;padding:0 32px;">
+      <img src="assets/ccms-prospective-families.png" alt="Prospective Families list with status pipeline and an Invite the Family modal" style="width:100%;height:auto;display:block;">
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:620px;margin:22px auto 0;">Interested Families and Enrolled Students as separate destinations, the thesis, made navigable.</figcaption>
+    </figure>
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">The two-phase family flow</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 24px;">Built first, because it's the heart of the bet. <strong style="font-weight:700;">Phase 1, Apply:</strong> welcome → child's info and schedule → cost and payment, where the family sees the real total, agrees, pays the deposit, and saves a method. <strong style="font-weight:700;">Provider reviews and accepts</strong>, the intentional pause, where sibling discounts and fees get sorted. <strong style="font-weight:700;">Phase 2, Complete:</strong> sign documents → add guardians, emergency contacts, and approved pickups → health details. Then the child is enrolled.</p>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Two decisions carry weight here. <strong style="font-weight:700;">Payment comes before guardians and health</strong>, the provider needs a child, a schedule, and a committed deposit to decide; they don't need allergy details to say yes. That ordering also gets families onto billing as early in the relationship as possible, on the hypothesis that a family with a card on file and a deposit down is a family far more likely to stick around. And <strong style="font-weight:700;">account creation is invisible:</strong> the invite link is a passwordless magic link, so no password screen interrupts a parent who's already been identified.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">Tuition as a SKU, not a per-child guess</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Rates are modeled per age tier and daypart, with provider-selectable billing cadences shown as columns in an editable rate grid. Set one annual rate and the month/week/day rates derive automatically, any cell overridable. Once saved, rates lock to display-only behind an "Edit rates" button with an amber warning, tuition is the kind of number you don't want to fat-finger. Rooms are pure age-range containers for physical placement; they deliberately don't drive price.</p>
+    </section>
+    <figure data-reveal style="max-width:980px;margin:48px auto 0;padding:0 32px;">
+      <img src="assets/ccms-tuition-sku.png" alt="Program Settings tuition rate grid, showing full-day and half-day rates across billing cadences" style="width:100%;height:auto;display:block;">
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:620px;margin:22px auto 0;">Tuition modeled as a SKU: one rate grid per age tier, with month/week/day cadences deriving automatically and locking once saved.</figcaption>
+    </figure>
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">Onboarding reuses the editors</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">The guided setup flow (tuition → enrollment → schedule → policies → rooms → review) renders the exact same tab editors as Program Settings, one step at a time with a checklist rail, ending in a generated parent handbook. No duplicate logic, and a director who onboards already knows where everything lives afterward.</p>
+    </section>
+
+    <figure data-reveal style="max-width:980px;margin:48px auto 0;padding:0 32px;">
+      <img src="assets/ccms-two-phase-flow.png" alt="Family apply flow, Cost & payment step showing tuition, deposit, and registration fee due on acceptance" style="width:100%;height:auto;display:block;">
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:620px;margin:22px auto 0;">The Cost &amp; payment step of Phase 1, Apply: the family sees the real total and authorizes a charge only once the provider accepts.</figcaption>
+    </figure>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">Craft decisions</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">The activity timeline on each lead turns "where is this family in the process" from a guess into a glance. Family-maintained profile sections are marked as such, with provider overrides tracked separately, encoding a real trust boundary. A demo toggle flips between an empty "new provider" dataset (lands in onboarding) and a populated "established" one, so the prototype tells both the cold-start and steady-state story.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">What's real vs. mocked</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">The data model, leads workflow, two-phase enrollment, tuition-as-SKU, and every UI pattern are the real design. Payments, document signing, messaging, and notifications are mocked. This prototype carried the model into the payment-infrastructure review and serves as the build spec for the rebuild.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">What's next</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">The billing and tuition section against real payment infrastructure is the likely first production workstream.</p>
+    </section>
+
+    <div style="text-align:center;margin-top:96px;">
+      <a href="index.html" style="display:inline-flex;align-items:center;font-family:'Unbounded',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.6px;color:#fff;background:#D6006E;padding:18px 40px;border-radius:999px;transition:transform .2s ease,box-shadow .2s ease;">Back to home</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:transparent;border-top:1px solid #F4DEDA;padding:120px 32px 100px;text-align:center;">
+    <h2 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(34px,5vw,62px);line-height:1.05;letter-spacing:-2px;color:#D6006E;margin:0 0 48px;">Let's keep<br>in touch</h2>
+    <div style="display:flex;gap:36px;justify-content:center;align-items:center;color:#231A4E;">
+      <a href="mailto:ccattebe@gmail.com" aria-label="Email" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3.5 6.5l8.5 6 8.5-6"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/caitlin-atteberry-b6901729/" target="_blank" aria-label="LinkedIn" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  </div>
+</div>
+
+<script src="reveal.js"></script>
+</body>
+</html>

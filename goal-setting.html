@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Caitlin Atteberry. Product Designer.">
+<title>Goal Setting | Caitlin Atteberry</title>
+<link rel="icon" type="image/svg+xml" href="ca-favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800;900&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#FFF2EF;-webkit-font-smoothing:antialiased;}
+  a{text-decoration:none;color:inherit;}
+  ::selection{background:#FEC8DE;color:#231A4E;}
+  [data-reveal]{opacity:0;}
+  .case-row,.feature-card{box-shadow:none;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease;}
+  .case-row:hover{transform:translateY(-6px);box-shadow:0 30px 64px -34px rgba(37,25,76,0.5);}
+  .case-row:hover .case-img{transform:scale(1.06);}
+  .feature-card:hover{transform:translateY(-6px);box-shadow:0 40px 84px -40px rgba(27,10,85,0.7);}
+  .feature-img{transform:rotateY(-23deg) rotateX(7deg) rotate(-1deg);transition:transform .55s cubic-bezier(.2,.7,.2,1);}
+  .feature-card:hover .feature-img{transform:rotateY(-19deg) rotateX(5deg) rotate(-1deg) scale(1.05);}
+  .t-rail{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:6px max(64px, calc((100vw - 1180px)/2 + 64px)) 24px;}
+  .t-rail::-webkit-scrollbar{display:none;}
+  .t-card{flex:0 0 clamp(340px,40vw,470px);scroll-snap-align:start;}
+  @media(max-width:900px){
+    nav{padding:22px 32px !important;}
+    header{padding:60px 32px !important;grid-template-columns:1fr !important;}
+    .work-section{padding:0 32px !important;}
+    .feature-card{grid-template-columns:1fr !important;padding:48px 32px !important;}
+    .cards-grid{grid-template-columns:1fr !important;}
+    footer{padding:80px 32px 60px !important;}
+  }
+</style>
+</head>
+<body>
+
+
+<div style="font-family:'Inter',sans-serif;color:#231A4E;overflow-x:hidden;background:#2A1E5C;">
+
+  <!-- NAVY HERO BLOCK (pinned) -->
+  <div style="position:sticky;top:0;z-index:1;background:#2A1E5C;">
+    <nav style="display:flex;align-items:center;justify-content:space-between;padding:30px 64px 10px;max-width:1320px;margin:0 auto;">
+      <a href="index.html" aria-label="Home" style="display:block;">
+        <svg width="44" height="63" viewBox="0 0 130 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="130" height="186" rx="16" fill="#1601B5"></rect>
+          <path d="M108.364 55.668H95.6818C94.9318 51.9659 93.6193 48.7136 91.7443 45.9111C89.9034 43.1086 87.6534 40.7559 84.9943 38.853C82.3693 36.9154 79.4545 35.4623 76.25 34.4935C73.0455 33.5247 69.7045 33.0404 66.2273 33.0404C59.8864 33.0404 54.142 34.6665 48.9943 37.9188C43.8807 41.1711 39.8068 45.963 36.7727 52.2946C33.7727 58.6261 32.2727 66.3936 32.2727 75.5968C32.2727 84.8001 33.7727 92.5675 36.7727 98.8991C39.8068 105.231 43.8807 110.023 48.9943 113.275C54.142 116.527 59.8864 118.153 66.2273 118.153C69.7045 118.153 73.0455 117.669 76.25 116.7C79.4545 115.731 82.3693 114.296 84.9943 112.393C87.6534 110.455 89.9034 108.085 91.7443 105.283C93.6193 102.445 94.9318 99.1932 95.6818 95.5257H108.364C107.409 100.958 105.67 105.819 103.148 110.109C100.625 114.399 97.4886 118.049 93.7386 121.06C89.9886 124.035 85.7784 126.301 81.108 127.858C76.4716 129.415 71.5114 130.194 66.2273 130.194C57.2955 130.194 49.3523 127.979 42.3977 123.551C35.4432 119.122 29.9716 112.825 25.983 104.66C21.9943 96.4945 20 86.8068 20 75.5968C20 64.3868 21.9943 54.6992 25.983 46.5339C29.9716 38.3686 35.4432 32.0716 42.3977 27.643C49.3523 23.2143 57.2955 21 66.2273 21C71.5114 21 76.4716 21.7785 81.108 23.3354C85.7784 24.8924 89.9886 27.1759 93.7386 30.186C97.4886 33.1615 100.625 36.7943 103.148 41.0846C105.67 45.3402 107.409 50.2013 108.364 55.668Z" fill="white"></path>
+          <path d="M33.2955 165H20L58.4545 58.7126H71.5455L110 165H96.7045L65.4091 75.5276H64.5909L33.2955 165Z" fill="white"></path>
+        </svg>
+      </a>
+      <div style="display:flex;gap:38px;font-family:'Lexend',sans-serif;font-weight:500;font-size:16px;">
+        <a href="index.html" style="color:#fff;transition:opacity .2s ease;">Home</a>
+        <a href="about.html" style="color:#fff;transition:opacity .2s ease;">About</a>
+      </div>
+    </nav>
+    <header style="max-width:1320px;margin:0 auto;padding:78px 64px 92px;">
+      <div data-reveal style="font-family:'Lexend',sans-serif;font-weight:500;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#fff;margin-bottom:30px;">DISQO. Survey Junkie</div>
+      <h1 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(38px,6vw,84px);line-height:0.96;letter-spacing:-3px;color:#fff;margin:0;max-width:15ch;">Testing our way to a better goal</h1>
+    </header>
+  </div>
+
+  <!-- PINK CONTENT SHEET -->
+  <div style="position:relative;z-index:2;background:#FFF2EF;border-radius:20px 20px 0 0;box-shadow:0 -26px 60px -18px rgba(18,7,56,0.5);">
+
+  <!-- OBJECTIVE / MY ROLE / TOOLS -->
+  <section style="max-width:1180px;margin:0 auto;padding:76px 56px 0;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:52px;">
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">Objective</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Create in-app personalization to tie Survey Junkie to tangible value in our Members' lives.</p>
+        </div>
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">My Role</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Interaction Design, Animation, &amp; Prototyping</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Visual Design</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Data Analysis</p>
+        </div>
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">Tools</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Optimizely <em>for</em> Testing</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Mixpanel <em>for</em> Data Analysis</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Figma <em>for</em> Prototyping</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- BODY -->
+  <main style="padding:24px 0 120px;">
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 44px;">Background</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 28px;">Survey Junkie is a mobile and desktop app that connects users with market research surveys, letting them earn money for sharing their opinions. The platform has always looked transactional on the surface: take a survey, get paid. But we suspected there was a deeper narrative behind why 2.5 million monthly active users kept coming back.</p>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">At the start of 2022, we surveyed our Members to understand their motivations, preferences, and strategies for taking surveys. A clear trend emerged from the thousands of responses: many Members used Survey Junkie with specific savings goals in mind, leveraging the platform to cover essentials like utility bills, holiday gifts, or a "fun money" fund.</p>
+    </section>
+
+    <section data-reveal style="max-width:640px;margin:40px auto 0;padding:0 32px;">
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
+        <span style="font-family:'Inter',sans-serif;font-weight:500;font-size:15px;color:#231A4E;background:#fff;border:1px solid #F1D9D4;padding:10px 18px;border-radius:6px;">💡 Bills</span>
+        <span style="font-family:'Inter',sans-serif;font-weight:500;font-size:15px;color:#231A4E;background:#fff;border:1px solid #F1D9D4;padding:10px 18px;border-radius:6px;">💰 Extra Cash</span>
+        <span style="font-family:'Inter',sans-serif;font-weight:500;font-size:15px;color:#231A4E;background:#fff;border:1px solid #F1D9D4;padding:10px 18px;border-radius:6px;">🛒 Groceries</span>
+        <span style="font-family:'Inter',sans-serif;font-weight:500;font-size:15px;color:#231A4E;background:#fff;border:1px solid #F1D9D4;padding:10px 18px;border-radius:6px;">🐷 Savings</span>
+        <span style="font-family:'Inter',sans-serif;font-weight:500;font-size:15px;color:#231A4E;background:#fff;border:1px solid #F1D9D4;padding:10px 18px;border-radius:6px;">⛽ Gas Money</span>
+        <span style="font-family:'Inter',sans-serif;font-weight:500;font-size:15px;color:#231A4E;background:#fff;border:1px solid #F1D9D4;padding:10px 18px;border-radius:6px;">🎁 Presents</span>
+        <span style="font-family:'Inter',sans-serif;font-weight:500;font-size:15px;color:#231A4E;background:#fff;border:1px solid #F1D9D4;padding:10px 18px;border-radius:6px;">✨ A Special Treat</span>
+      </div>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">Hypothesis 1</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 28px;"><strong style="font-weight:700;">Hypothesis:</strong> this discovery led to our first bet: introducing a feature that lets Members set and track goals within Survey Junkie would create a more personalized experience, making the app a more integral part of Members' daily routines and boosting both retention and engagement.</p>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;"><strong style="font-weight:700;">Test:</strong> we built a Smoke Test with minimal functionality to gauge interest without burning real development time. We ran a four-week A/B test across 100% of our iOS app users. Cohort A (control) never saw the goal-setting feature; Cohort B was introduced to it right after completing their first survey.</p>
+    </section>
+    <figure data-reveal style="max-width:980px;margin:48px auto 0;padding:0 32px;">
+      <img data-reveal src="assets/goal-setting-smoke-test.png" alt="Smoke Test prototype: goal setup, goal set confirmation, and congrats screens" style="width:100%;height:auto;display:block;">
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:560px;margin:22px auto 0;">The Smoke Test prototype, built with intentionally simple UI to get an early read on Member interest.</figcaption>
+    </figure>
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;"><strong style="font-weight:700;">Results:</strong> the numbers came in loud and clear. 68.5% of Members in Cohort B set a goal, and that group also showed higher engagement: 9% more survey clicks per Member and 17% more unique redemptions than the control group. By the metrics of our Smoke Test, that's a win. But looking further down the funnel told a more complicated story.</p>
+    </section>
+
+    <section data-reveal style="max-width:640px;margin:48px auto 0;padding:0 32px;">
+      <div style="background:#2A1E5C;border-radius:16px;padding:40px 38px;text-align:center;">
+        <p style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(24px,3vw,32px);line-height:1.3;color:#FF8FBE;margin:0;">68.5% of Members in the test group set a goal</p>
+      </div>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:56px 32px 0;">
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Only 3.7% of Members who set a goal actually achieved it within the four-week window. Retention in Cohort B dropped 7% at five days and 26% at 14 days. Digging in, we found 33% of Members were setting ambitious $30 goals, which could take weeks for a casual user to reach. Compounding the problem, progress reminders only fired at 25%, 50%, 75%, and 100% completion, meaning some Members might never see a tracking prompt at all. Those findings shaped our next hypothesis.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">Hypothesis 2</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 28px;"><strong style="font-weight:700;">Hypothesis:</strong> we suspected Members felt frustrated when they didn't see consistent progress toward their goals. By introducing static goal tracking at key reward moments, like right after completing a survey, and giving progress an animated visual, we could make it tangible: reduce frustration and keep Members engaged by clearly showcasing what they'd already achieved.</p>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;"><strong style="font-weight:700;">Test:</strong> we kept the same goal-setup flow from the Smoke Test but layered in static goal tracking on the Rewards page and on survey-completion screens, where Members actually earn points. Same 100% iOS audience, same 50/50 split.</p>
+    </section>
+    <figure data-reveal style="max-width:980px;margin:48px auto 0;padding:0 32px;">
+      <img data-reveal src="assets/goal-setting-hypothesis2.png" alt="Hypothesis 2 test: survey completion goal card and Rewards page with progress gauge" style="width:100%;height:auto;display:block;">
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:560px;margin:22px auto 0;">The next iteration of the goal-setting test, with static goal tracking built into rewarding moments.</figcaption>
+    </figure>
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 12px;"><strong style="font-weight:700;">Results:</strong> this time, the added touchpoints made a real difference. Goal-setting held steady at 65%, but the payoff showed up in the goal-achievement metrics that mattered: 54% of Members who set goals successfully reached them, and 14-day retention jumped 20%. Members felt a genuine sense of accomplishment working toward the things that mattered to them.</p>
+    </section>
+
+    <!-- STAT GRID -->
+    <section data-reveal style="max-width:820px;margin:48px auto 0;padding:0 32px;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;">
+        <div style="background:#fff;border-radius:10px;padding:30px 22px;text-align:center;box-shadow:0 14px 40px -28px rgba(37,25,76,0.5);">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:42px;line-height:1;color:#D6006E;">65%</div>
+          <div style="font-size:13px;color:#231A4E;margin-top:10px;line-height:1.4;">of Members set a goal</div>
+        </div>
+        <div style="background:#2A1E5C;border-radius:10px;padding:30px 22px;text-align:center;">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:42px;line-height:1;color:#fff;">54%</div>
+          <div style="font-size:13px;color:#B9AEE6;margin-top:10px;line-height:1.4;">of goals successfully reached</div>
+        </div>
+        <div style="background:#fff;border-radius:10px;padding:30px 22px;text-align:center;box-shadow:0 14px 40px -28px rgba(37,25,76,0.5);">
+          <div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:42px;line-height:1;color:#D6006E;">+20%</div>
+          <div style="font-size:13px;color:#231A4E;margin-top:10px;line-height:1.4;">lift in 14-day retention</div>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">Conclusion</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Hypothesis-driven development proved to be one of the most effective ways to de-risk our work in real time. By testing our assumptions early through well-structured experiments, we gathered actionable insight that directly shaped our product decisions, validated ideas quickly, adjusted course when we needed to, and made sure what we shipped actually met our Members' needs. It reinforced something we already believed: continuous testing and learning make for a more engaging, more personal product, while minimizing the risk of pouring resources into unproven concepts.</p>
+    </section>
+
+    <div style="text-align:center;margin-top:96px;">
+      <a href="index.html" style="display:inline-flex;align-items:center;font-family:'Unbounded',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.6px;color:#fff;background:#D6006E;padding:18px 40px;border-radius:8px;transition:transform .2s ease,box-shadow .2s ease;">Back to home</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:transparent;border-top:1px solid #F4DEDA;padding:120px 32px 100px;text-align:center;">
+    <h2 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(34px,5vw,62px);line-height:1.05;letter-spacing:-2px;color:#D6006E;margin:0 0 48px;">Let's keep<br>in touch</h2>
+    <div style="display:flex;gap:36px;justify-content:center;align-items:center;color:#231A4E;">
+      <a href="mailto:ccattebe@gmail.com" aria-label="Email" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"></rect><path d="M3.5 6.5l8.5 6 8.5-6"></path></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/caitlin-atteberry-b6901729/" target="_blank" aria-label="LinkedIn" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0Z"></path></svg>
+      </a>
+    </div>
+  </footer>
+
+  </div>
+</div>
+
+<script src="reveal.js"></script>
+</body>
+</html>

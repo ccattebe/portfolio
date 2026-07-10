@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Caitlin Atteberry. Product Designer.">
+<title>NM Claim Flow | Caitlin Atteberry</title>
+<link rel="icon" type="image/svg+xml" href="ca-favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800;900&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:#FFF2EF;-webkit-font-smoothing:antialiased;}
+  a{text-decoration:none;color:inherit;}
+  ::selection{background:#FEC8DE;color:#231A4E;}
+  [data-reveal]{opacity:0;}
+  .case-row,.feature-card{box-shadow:none;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease;}
+  .case-row:hover{transform:translateY(-6px);box-shadow:0 30px 64px -34px rgba(37,25,76,0.5);}
+  .case-row:hover .case-img{transform:scale(1.06);}
+  .feature-card:hover{transform:translateY(-6px);box-shadow:0 40px 84px -40px rgba(27,10,85,0.7);}
+  .feature-img{transform:rotateY(-23deg) rotateX(7deg) rotate(-1deg);transition:transform .55s cubic-bezier(.2,.7,.2,1);}
+  .feature-card:hover .feature-img{transform:rotateY(-19deg) rotateX(5deg) rotate(-1deg) scale(1.05);}
+  .t-rail{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:6px max(64px, calc((100vw - 1180px)/2 + 64px)) 24px;}
+  .t-rail::-webkit-scrollbar{display:none;}
+  .t-card{flex:0 0 clamp(340px,40vw,470px);scroll-snap-align:start;}
+  @media(max-width:900px){
+    nav{padding:22px 32px !important;}
+    header{padding:60px 32px !important;grid-template-columns:1fr !important;}
+    .work-section{padding:0 32px !important;}
+    .feature-card{grid-template-columns:1fr !important;padding:48px 32px !important;}
+    .cards-grid{grid-template-columns:1fr !important;}
+    footer{padding:80px 32px 60px !important;}
+  }
+</style>
+</head>
+<body>
+
+
+<div style="font-family:'Inter',sans-serif;color:#231A4E;overflow-x:hidden;background:#2A1E5C;">
+
+  <!-- NAVY HERO BLOCK (pinned) -->
+  <div style="position:sticky;top:0;z-index:1;background:#2A1E5C;">
+    <nav style="display:flex;align-items:center;justify-content:space-between;padding:30px 64px 10px;max-width:1320px;margin:0 auto;">
+      <a href="index.html" aria-label="Home" style="display:block;">
+        <svg width="44" height="63" viewBox="0 0 130 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="130" height="186" rx="16" fill="#1601B5"></rect>
+          <path d="M108.364 55.668H95.6818C94.9318 51.9659 93.6193 48.7136 91.7443 45.9111C89.9034 43.1086 87.6534 40.7559 84.9943 38.853C82.3693 36.9154 79.4545 35.4623 76.25 34.4935C73.0455 33.5247 69.7045 33.0404 66.2273 33.0404C59.8864 33.0404 54.142 34.6665 48.9943 37.9188C43.8807 41.1711 39.8068 45.963 36.7727 52.2946C33.7727 58.6261 32.2727 66.3936 32.2727 75.5968C32.2727 84.8001 33.7727 92.5675 36.7727 98.8991C39.8068 105.231 43.8807 110.023 48.9943 113.275C54.142 116.527 59.8864 118.153 66.2273 118.153C69.7045 118.153 73.0455 117.669 76.25 116.7C79.4545 115.731 82.3693 114.296 84.9943 112.393C87.6534 110.455 89.9034 108.085 91.7443 105.283C93.6193 102.445 94.9318 99.1932 95.6818 95.5257H108.364C107.409 100.958 105.67 105.819 103.148 110.109C100.625 114.399 97.4886 118.049 93.7386 121.06C89.9886 124.035 85.7784 126.301 81.108 127.858C76.4716 129.415 71.5114 130.194 66.2273 130.194C57.2955 130.194 49.3523 127.979 42.3977 123.551C35.4432 119.122 29.9716 112.825 25.983 104.66C21.9943 96.4945 20 86.8068 20 75.5968C20 64.3868 21.9943 54.6992 25.983 46.5339C29.9716 38.3686 35.4432 32.0716 42.3977 27.643C49.3523 23.2143 57.2955 21 66.2273 21C71.5114 21 76.4716 21.7785 81.108 23.3354C85.7784 24.8924 89.9886 27.1759 93.7386 30.186C97.4886 33.1615 100.625 36.7943 103.148 41.0846C105.67 45.3402 107.409 50.2013 108.364 55.668Z" fill="white"></path>
+          <path d="M33.2955 165H20L58.4545 58.7126H71.5455L110 165H96.7045L65.4091 75.5276H64.5909L33.2955 165Z" fill="white"></path>
+        </svg>
+      </a>
+      <div style="display:flex;gap:38px;font-family:'Lexend',sans-serif;font-weight:500;font-size:16px;">
+        <a href="index.html" style="color:#fff;transition:opacity .2s ease;">Home</a>
+        <a href="about.html" style="color:#fff;transition:opacity .2s ease;">About</a>
+      </div>
+    </nav>
+    <header style="max-width:1320px;margin:0 auto;padding:78px 64px 92px;">
+      <div data-reveal style="font-family:'Lexend',sans-serif;font-weight:500;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#fff;margin-bottom:30px;">Wonderschool. New Mexico ECECDhild Care</div>
+      <h1 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(38px,6vw,84px);line-height:0.96;letter-spacing:-3px;color:#fff;margin:0;max-width:15ch;">Trust the handoff</h1>
+    </header>
+  </div>
+
+  <!-- PINK CONTENT SHEET -->
+  <div style="position:relative;z-index:2;background:#FFF2EF;border-radius:20px 20px 0 0;box-shadow:0 -26px 60px -18px rgba(18,7,56,0.5);">
+
+  <!-- OBJECTIVE / MY ROLE / TOOLS -->
+  <section style="max-width:1180px;margin:0 auto;padding:76px 56px 0;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:52px;">
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">Objective</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Let providers claim and maintain their own listing in a few self-serve steps, so the state offloads upkeep to the people closest to the truth.</p>
+        </div>
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">My Role</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Product &amp; Interaction Design</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Flow Design</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Prototyping</p>
+        </div>
+        <div style="padding:26px 0 0;border-top:2px solid #E9C9C3;">
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:18px;">Context</div>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Surface: Provider acquisition</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0 0 16px;">Prototype: nm-claim-flow</p>
+          <p style="font-size:16px;line-height:1.55;color:#D6006E;margin:0;">Tool: Figma</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- BODY -->
+  <main style="padding:24px 0 120px;">
+
+    <section style="max-width:640px;margin:0 auto;padding:72px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">The problem</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 24px;">New Mexico's Early Care and Education Department is standing up a public child care finder for its Universal Child Care program. The state already holds registry data on thousands of programs, but it goes stale the moment it's published, hours change, availability shifts, directors come and go. Asking ECECD staff to maintain it by hand doesn't scale.</p>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 24px;">The existing claim process made this worse. A provider would click "Claim this listing" on their white-labeled New Mexico finder page and land straight in Wonderschool's generic account creation, no bespoke design, no explanation. Providers got confused about why a state-branded product had suddenly become a completely different one, and that confusion showed up as drop-off right at the moment we most needed them to convert.</p>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 24px;">The handoff itself isn't going away. Wonderschool's core product doesn't yet support white-labeling (that's on the roadmap), so claiming a listing will always mean stepping from the state-branded finder into Wonderschool proper. The fix wasn't to disguise that shift, it was to introduce it on purpose, with a moment that names both brands and explains what's about to happen before the provider is asked to create an account.</p>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">The hypothesis: if providers can <strong style="font-weight:700;">claim their own listing</strong> through a co-branded experience that explains the handoff instead of hiding it, the state offloads maintenance to the people closest to the truth, and providers gain a reason to keep their page current, because it's now theirs.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">What I designed</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">A complete claim flow, from a family-facing finder all the way to a claimed account, with one deliberate twist: the same flow runs in <strong style="font-weight:700;">two brandings side by side</strong>, the NM ECECD version (teal, state logo, "contact ECECD" recovery) and the Wonderschool marketplace version (Wonderschool blue, "create a new listing" recovery).</p>
+    </section>
+
+    <section data-reveal style="max-width:720px;margin:48px auto 0;padding:0 32px;">
+      <div style="background:#2A1E5C;border-radius:12px;padding:36px 38px;">
+        <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#FF8FBE;margin-bottom:14px;">The bet on one flow</div>
+        <p style="font-size:16px;line-height:1.7;color:#EDE7FB;margin:0;">Running both brandings in one prototype pressure-tested whether a single flow could serve a state partner and the national marketplace without forking the design. Because the versions share structure and diverge only in tokens, copy, and recovery routing, the prototype is itself the argument that one flow can serve both audiences.</p>
+      </div>
+    </section>
+
+    <section style="max-width:720px;margin:0 auto;padding:40px 32px 0;">
+        <div data-reveal style="display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:1px solid #F1DAD5;">
+          <div style="flex:none;width:38px;height:38px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;">1</div>
+          <div><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:17px;color:#231A4E;margin-bottom:6px;">Finder landing</div><p style="font-size:15px;line-height:1.65;color:#231A4E;margin:0;opacity:0.85;">A real-feeling search results page, filter pills, map, "showing X of Y programs," a Universal Child Care banner. Unclaimed programs surface a "Claim this listing" call to action right where a provider recognizes their own center.</p></div>
+        </div>
+        <div data-reveal style="display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:1px solid #F1DAD5;">
+          <div style="flex:none;width:38px;height:38px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;">2</div>
+          <div><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:17px;color:#231A4E;margin-bottom:6px;">Find your program</div><p style="font-size:15px;line-height:1.65;color:#231A4E;margin:0;opacity:0.85;">Live typeahead across name, city, license number, director, address, and zip. Forgiving on purpose, a director shouldn't need to know exactly how the state spelled their business name.</p></div>
+        </div>
+        <div data-reveal style="display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:1px solid #F1DAD5;">
+          <div style="flex:none;width:38px;height:38px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;">3</div>
+          <div><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:17px;color:#231A4E;margin-bottom:6px;">Verify ownership</div><p style="font-size:15px;line-height:1.65;color:#231A4E;margin:0;opacity:0.85;">The trust gate, and the key UX decision: a two-field check with a confidence cascade. A matching license number alone is enough, but a weak or mistyped license can be rescued by an address match. One rigid field would lock out legitimate owners over a typo; "either path works" keeps the gate meaningful without making it brittle.</p></div>
+        </div>
+        <div data-reveal style="display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:1px solid #F1DAD5;">
+          <div style="flex:none;width:38px;height:38px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;">4</div>
+          <div><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:17px;color:#231A4E;margin-bottom:6px;">Create account</div><p style="font-size:15px;line-height:1.65;color:#231A4E;margin:0;opacity:0.85;">Name, live-formatted phone, email, password with inline strength guidance. Email-already-taken is handled gracefully with a "log in instead" off-ramp rather than a dead end.</p></div>
+        </div>
+        <div data-reveal style="display:flex;gap:20px;align-items:flex-start;padding:22px 0;border-bottom:none;">
+          <div style="flex:none;width:38px;height:38px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;">5</div>
+          <div><div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:17px;color:#231A4E;margin-bottom:6px;">Claimed landing</div><p style="font-size:15px;line-height:1.65;color:#231A4E;margin:0;opacity:0.85;">Intentionally a clean stub, a handoff seam for the post-claim dashboard that comes next.</p></div>
+        </div>
+    </section>
+
+    <figure data-reveal style="max-width:980px;margin:48px auto 0;padding:0 32px;">
+      <img src="assets/nm-claim-cobrand-intro.png" alt="Co-branded modal reading 'New Mexico Child Care Finder is powered by Wonderschool,' explaining the account handoff before it happens" style="width:100%;height:auto;display:block;">
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:620px;margin:22px auto 0;">The moment that introduces Wonderschool by name, before the provider is asked to create an account, so the handoff is explained rather than discovered.</figcaption>
+    </figure>
+
+    <figure data-reveal style="max-width:1040px;margin:56px auto 0;padding:0 32px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <img src="assets/nm-claim-find-program.png" alt="Find your program step of the claim flow, co-branded with the New Mexico Early Childhood logo" style="width:100%;height:auto;display:block;">
+        <img src="assets/nm-claim-verify.png" alt="Verify your program step, asking for license number or director email plus address" style="width:100%;height:auto;display:block;">
+      </div>
+      <figcaption style="font-style:italic;font-size:14px;line-height:1.5;color:#D6006E;text-align:center;max-width:620px;margin:22px auto 0;">The co-branded claim flow itself: find the program, then verify ownership with the license number or director's email.</figcaption>
+    </figure>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">Craft decisions</h2>
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:32px 0 12px;">Recovery paths are first-class</h3>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:0px 32px 0;">
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Every "we couldn't find / verify your program" state is context-aware: the NM flow points to ECECD contact info, the marketplace flow offers "create a new listing." Failure states are where claim flows usually leak users, so they got as much attention as the happy path.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:48px 32px 0;">
+      <h3 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;color:#231A4E;margin:0 0 20px;">Already-claimed isn't a wall</h3>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Already-claimed programs route to a "request to be added as staff" path, because the real-world case, a second director at the same center, deserves a door, not an error.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">What's real vs. mocked</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">The branding, flow logic, fuzzy-matching rules, and recovery UX are the real deliverable. Program data, verification, and account creation are mocked in memory, this is a flow-and-decisions prototype for the ECECD partnership conversation, not a working backend.</p>
+    </section>
+
+    <section style="max-width:640px;margin:0 auto;padding:104px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;letter-spacing:-1px;color:#231A4E;text-align:center;margin:0 0 28px;">What's next</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Build the post-claim landing into a real provider dashboard, and wire verification to the actual ECECD registry import.</p>
+    </section>
+
+    <div style="text-align:center;margin-top:96px;">
+      <a href="index.html" style="display:inline-flex;align-items:center;font-family:'Unbounded',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.6px;color:#fff;background:#D6006E;padding:18px 40px;border-radius:999px;transition:transform .2s ease,box-shadow .2s ease;">Back to home</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:transparent;border-top:1px solid #F4DEDA;padding:120px 32px 100px;text-align:center;">
+    <h2 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(34px,5vw,62px);line-height:1.05;letter-spacing:-2px;color:#D6006E;margin:0 0 48px;">Let's keep<br>in touch</h2>
+    <div style="display:flex;gap:36px;justify-content:center;align-items:center;color:#231A4E;">
+      <a href="mailto:ccattebe@gmail.com" aria-label="Email" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3.5 6.5l8.5 6 8.5-6"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/caitlin-atteberry-b6901729/" target="_blank" aria-label="LinkedIn" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  </div>
+</div>
+
+<script src="reveal.js"></script>
+</body>
+</html>
