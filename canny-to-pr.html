@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canny to PR | Caitlin Atteberry</title>
+<link rel="icon" type="image/svg+xml" href="ca-favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800;900&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;}html{scroll-behavior:smooth;}body{margin:0;background:#FFF2EF;-webkit-font-smoothing:antialiased;}a{text-decoration:none;color:inherit;}::selection{background:#FEC8DE;color:#231A4E;}[data-reveal]{opacity:0;}.feature-card{box-shadow:none;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s ease;}.feature-card:hover{transform:translateY(-6px);box-shadow:0 40px 84px -40px rgba(27,10,85,0.7);}@media(max-width:900px){nav{padding:22px 32px !important;}header{padding:60px 32px !important;grid-template-columns:1fr !important;}.feature-card{grid-template-columns:1fr !important;padding:48px 32px !important;}.cards-grid{grid-template-columns:1fr !important;}footer{padding:80px 32px 60px !important;}}
+</style>
+</head>
+<body>
+
+
+<div style="font-family:'Inter',sans-serif;color:#231A4E;overflow-x:hidden;background:#2A1E5C;">
+
+  <!-- PASSWORD GATE -->
+  <div data-gate style="position:fixed;inset:0;z-index:999;background:#2A1E5C;display:flex;align-items:center;justify-content:center;padding:24px;">
+    <div style="max-width:380px;width:100%;background:#FFF2EF;border-radius:16px;padding:40px 36px;text-align:center;">
+      <div style="font-family:'Lexend',sans-serif;font-weight:500;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#D6006E;margin-bottom:14px;">Private case study</div>
+      <p style="font-size:15px;line-height:1.6;color:#231A4E;opacity:0.75;margin:0 0 22px;">This is client-confidential work. Enter the password to view it.</p>
+      <input data-gate-input type="password" placeholder="Password" style="width:100%;font-size:15px;padding:12px 14px;border:1px solid #E7CFC9;border-radius:8px;margin-bottom:14px;font-family:'Inter',sans-serif;box-sizing:border-box;">
+      <div data-gate-error style="display:none;font-size:13px;color:#D6006E;margin:-6px 0 14px;">Incorrect password, try again.</div>
+      <button data-gate-submit type="button" style="width:100%;font-family:'Unbounded',sans-serif;font-weight:700;font-size:14px;color:#fff;background:#D6006E;padding:13px;border:none;border-radius:8px;cursor:pointer;">Unlock</button>
+    </div>
+  </div>
+
+  <!-- NAVY HERO BLOCK (pinned) -->
+  <div style="position:sticky;top:0;z-index:1;background:#2A1E5C;">
+    <nav style="display:flex;align-items:center;justify-content:space-between;padding:30px 64px 10px;max-width:1320px;margin:0 auto;">
+      <a href="index.html" aria-label="Home" style="display:block;">
+        <svg width="44" height="63" viewBox="0 0 130 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="130" height="186" rx="16" fill="#1601B5"></rect>
+          <path d="M108.364 55.668H95.6818C94.9318 51.9659 93.6193 48.7136 91.7443 45.9111C89.9034 43.1086 87.6534 40.7559 84.9943 38.853C82.3693 36.9154 79.4545 35.4623 76.25 34.4935C73.0455 33.5247 69.7045 33.0404 66.2273 33.0404C59.8864 33.0404 54.142 34.6665 48.9943 37.9188C43.8807 41.1711 39.8068 45.963 36.7727 52.2946C33.7727 58.6261 32.2727 66.3936 32.2727 75.5968C32.2727 84.8001 33.7727 92.5675 36.7727 98.8991C39.8068 105.231 43.8807 110.023 48.9943 113.275C54.142 116.527 59.8864 118.153 66.2273 118.153C69.7045 118.153 73.0455 117.669 76.25 116.7C79.4545 115.731 82.3693 114.296 84.9943 112.393C87.6534 110.455 89.9034 108.085 91.7443 105.283C93.6193 102.445 94.9318 99.1932 95.6818 95.5257H108.364C107.409 100.958 105.67 105.819 103.148 110.109C100.625 114.399 97.4886 118.049 93.7386 121.06C89.9886 124.035 85.7784 126.301 81.108 127.858C76.4716 129.415 71.5114 130.194 66.2273 130.194C57.2955 130.194 49.3523 127.979 42.3977 123.551C35.4432 119.122 29.9716 112.825 25.983 104.66C21.9943 96.4945 20 86.8068 20 75.5968C20 64.3868 21.9943 54.6992 25.983 46.5339C29.9716 38.3686 35.4432 32.0716 42.3977 27.643C49.3523 23.2143 57.2955 21 66.2273 21C71.5114 21 76.4716 21.7785 81.108 23.3354C85.7784 24.8924 89.9886 27.1759 93.7386 30.186C97.4886 33.1615 100.625 36.7943 103.148 41.0846C105.67 45.3402 107.409 50.2013 108.364 55.668Z" fill="white"></path>
+          <path d="M33.2955 165H20L58.4545 58.7126H71.5455L110 165H96.7045L65.4091 75.5276H64.5909L33.2955 165Z" fill="white"></path>
+        </svg>
+      </a>
+      <div style="display:flex;gap:44px;font-family:'Unbounded',sans-serif;font-weight:700;font-size:18px;">
+        <a href="index.html" style="color:#FF2E88;transition:opacity .2s ease;">Home</a>
+        <a href="about.html" style="color:#FF2E88;transition:opacity .2s ease;">About</a>
+        <a href="assets/Caitlin-Atteberry-Resume.pdf" target="_blank" style="color:#FF2E88;transition:opacity .2s ease;">Résumé</a>
+      </div>
+    </nav>
+    <header style="max-width:1320px;margin:0 auto;padding:60px 64px 88px;">
+      <div data-reveal style="font-family:'Lexend',sans-serif;font-weight:500;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#fff;margin-bottom:26px;">Experiment. August 2026</div>
+      <h1 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(38px,6vw,84px);line-height:0.98;letter-spacing:-3px;color:#fff;margin:0 0 24px;max-width:15ch;">Canny to PR</h1>
+      <p data-reveal style="font-size:18px;line-height:1.6;color:rgba(255,255,255,0.72);margin:0;max-width:58ch;">A Claude skill reads the provider request board, picks something safe and small, and opens a pull request. Here is one run, end to end, including the parts a person still had to do.</p>
+    </header>
+  </div>
+
+  <!-- PINK CONTENT SHEET -->
+  <div style="position:relative;z-index:2;background:#FFF2EF;border-radius:34px 34px 0 0;box-shadow:0 -26px 60px -18px rgba(18,7,56,0.5);">
+
+  <!-- STAT BAR -->
+  <section style="max-width:1040px;margin:0 auto;padding:72px 56px 0;">
+    <div data-reveal style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+      <div style="background:#2A1E5C;border-radius:14px;padding:26px 20px;text-align:center;"><div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;color:#fff;line-height:1;">34</div><div style="font-size:11px;color:#B9AEE6;margin-top:10px;line-height:1.4;">requests triaged</div></div>
+      <div style="background:#fff;border-radius:14px;padding:26px 20px;text-align:center;"><div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;color:#D6006E;line-height:1;">6</div><div style="font-size:11px;color:#231A4E;margin-top:10px;line-height:1.4;">routed to a human</div></div>
+      <div style="background:#fff;border-radius:14px;padding:26px 20px;text-align:center;"><div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;color:#D6006E;line-height:1;">1</div><div style="font-size:11px;color:#231A4E;margin-top:10px;line-height:1.4;">built and shipped</div></div>
+      <div style="background:#fff;border-radius:14px;padding:26px 20px;text-align:center;"><div style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;color:#D6006E;line-height:1;">3</div><div style="font-size:11px;color:#231A4E;margin-top:10px;line-height:1.4;">lines changed</div></div>
+    </div>
+  </section>
+
+  <main style="padding:24px 0 120px;">
+
+    <section style="max-width:660px;margin:0 auto;padding:80px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:30px;letter-spacing:-1px;color:#231A4E;margin:0 0 22px;">The problem it solves</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Providers write to us through Canny asking for changes to the platform. The board has hundreds of open requests. Most are small, many are reasonable, and nobody has time to read them, let alone build them. The genuinely quick wins get buried under the big asks.</p>
+    </section>
+
+    <section style="max-width:660px;margin:0 auto;padding:72px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:30px;letter-spacing:-1px;color:#231A4E;margin:0 0 26px;">How the skill works</h2>
+      <div data-reveal style="display:flex;flex-direction:column;gap:0;">
+        <div style="display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid #F1DAD5;">
+          <div style="flex:none;width:32px;height:32px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;">1</div>
+          <p style="font-size:15px;line-height:1.7;margin:0;">Reads the Product Requests board, top items by votes and by trending, plus the comments, since that is usually where the real complaint is.</p>
+        </div>
+        <div style="display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid #F1DAD5;">
+          <div style="flex:none;width:32px;height:32px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;">2</div>
+          <p style="font-size:15px;line-height:1.7;margin:0;">Ranks them on demand, product fit, and how small the job is. Small and unambiguous wins.</p>
+        </div>
+        <div style="display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid #F1DAD5;">
+          <div style="flex:none;width:32px;height:32px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;">3</div>
+          <p style="font-size:15px;line-height:1.7;margin:0;">Decides what it is allowed to touch. Only self-contained, reversible, clearly specified changes. Anything involving money, authentication, or deleting data is refused outright. Anything vague goes to a person with a written reason.</p>
+        </div>
+        <div style="display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid #F1DAD5;">
+          <div style="flex:none;width:32px;height:32px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;">4</div>
+          <p style="font-size:15px;line-height:1.7;margin:0;">Builds exactly one item on its own branch and opens a pull request.</p>
+        </div>
+        <div style="display:flex;gap:18px;align-items:flex-start;padding:18px 0;">
+          <div style="flex:none;width:32px;height:32px;border-radius:50%;background:#2A1E5C;color:#fff;font-family:'Unbounded',sans-serif;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;">5</div>
+          <p style="font-size:15px;line-height:1.7;margin:0;">Posts to Slack what it built, what it refused, and what is queued next, and records it all in a ledger so the same request is never built twice.</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width:660px;margin:0 auto;padding:88px 32px 0;">
+      <div data-reveal style="font-family:'Lexend',sans-serif;font-weight:600;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#D6006E;margin-bottom:12px;">The worked example</div>
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:30px;letter-spacing:-1px;color:#231A4E;margin:0 0 26px;">"Difficult to distinguish between reviews"</h2>
+      <div data-reveal style="background:#fff;border-left:4px solid #D6006E;border-radius:8px;padding:24px 28px;margin-bottom:26px;">
+        <p style="font-size:15px;line-height:1.7;color:#231A4E;margin:0 0 12px;">The current review formatting on my Wonderschool profile makes it difficult to distinguish between reviews. Adding spacing between reviews and bolding the names and locations would improve readability.</p>
+        <p style="font-size:13px;color:#D6006E;margin:0;">A provider, filed to Canny in March. 2 votes, no comments.</p>
+      </div>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 24px;">The complaint held up under inspection. It was a real proximity defect, not a matter of taste. Proximity is how the eye groups things, and a boundary only reads if the space between groups clearly beats the space inside one.</p>
+      <div data-reveal style="background:#fff;border-radius:12px;padding:22px 24px;margin-bottom:24px;">
+        <div style="display:grid;grid-template-columns:1.4fr 0.6fr 1.4fr;gap:12px;font-size:11px;font-family:'Lexend',sans-serif;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#B08AA0;padding-bottom:10px;border-bottom:1px solid #F1DAD5;">
+          <span>Gap</span><span>Was</span><span>Effect</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1.4fr 0.6fr 1.4fr;gap:12px;font-size:14px;color:#231A4E;padding:12px 0;border-bottom:1px solid #F7EDEA;">
+          <span>Between two reviews</span><span style="font-weight:600;">16px</span><span style="opacity:0.75;">Meant to separate</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1.4fr 0.6fr 1.4fr;gap:12px;font-size:14px;color:#231A4E;padding:12px 0 0;">
+          <span>Inside one review</span><span style="font-weight:600;">8px</span><span style="opacity:0.75;">Stars row to comment body</span>
+        </div>
+      </div>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">A 2:1 ratio is too weak to group by, and once a comment wraps to three lines the paragraph's own leading absorbs the difference entirely. The boundaries stop meaning anything and eleven reviews fuse into one column of text.</p>
+    </section>
+
+    <!-- THREE-STAGE COMPARISON -->
+    <section data-reveal style="max-width:1180px;margin:0 auto;padding:56px 32px 0;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;align-items:start;">
+        <div>
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:#B08AA0;margin-bottom:8px;">1. Live today</div>
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;color:#231A4E;margin-bottom:8px;line-height:1.3;">Every gap looks the same</div>
+          <p style="font-size:13.5px;line-height:1.6;color:#231A4E;opacity:0.75;margin:0 0 16px;">Try to find where the second review starts without reading the words. The dates are the only clue and they do not stand out.</p>
+          <img src="assets/canny/review-1-live-today.jpg" alt="A list of four reviews with uniform spacing, so the boundaries between reviews are hard to see." style="width:100%;height:auto;display:block;border:1px solid #F1DAD5;border-radius:6px;background:#fff;">
+        </div>
+        <div>
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:#B08AA0;margin-bottom:8px;">2. Claude's first pass</div>
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;color:#231A4E;margin-bottom:8px;line-height:1.3;">Structure, roughly right</div>
+          <p style="font-size:13.5px;line-height:1.6;color:#231A4E;opacity:0.75;margin:0 0 16px;">A hairline rule and 24px between reviews. Four reviews now read as four. The date was bolded as the anchor, and the rule used a raw Tailwind grey.</p>
+          <img src="assets/canny/review-2-claude-first-pass.jpg" alt="The same reviews with hairline rules and more space between them, and the date set in bold." style="width:100%;height:auto;display:block;border:1px solid #F1DAD5;border-radius:6px;background:#fff;">
+        </div>
+        <div>
+          <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:#1F8A5B;margin-bottom:8px;">3. After design review</div>
+          <div style="font-family:'Unbounded',sans-serif;font-weight:700;font-size:15px;color:#231A4E;margin-bottom:8px;line-height:1.3;">The rating carries the line</div>
+          <p style="font-size:13.5px;line-height:1.6;color:#231A4E;opacity:0.75;margin:0 0 16px;">Bold moved to the rating, which is what a parent actually scans for and sits earlier in the line. Extra space after it, and the rule now uses a real design token.</p>
+          <img src="assets/canny/review-3-after-design-review.jpg" alt="The same reviews with the numeric rating set in bold instead of the date, and additional space after the rating." style="width:100%;height:auto;display:block;border:1px solid #F1DAD5;border-radius:6px;background:#fff;">
+        </div>
+      </div>
+    </section>
+
+    <section style="max-width:660px;margin:0 auto;padding:88px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:30px;letter-spacing:-1px;color:#231A4E;margin:0 0 26px;">What the human changed, and why</h2>
+      <div data-reveal style="display:grid;grid-template-columns:86px 1fr;gap:18px;background:#fff;border-radius:10px;padding:20px 22px;margin-bottom:16px;">
+        <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:#B08AA0;padding-top:4px;line-height:1.4;">Anchor</div>
+        <p style="font-size:15px;line-height:1.7;margin:0;color:#231A4E;"><strong style="font-weight:700;">Bold the rating, not the date.</strong> Both give a review a starting point, so this was a judgement call rather than a bug. The rating is the thing a parent is scanning for and it sits earlier in the line, so it does more work as an anchor. The date returned to its original weight and gained a little breathing room, measured at 8px from stars to rating and 12px from rating to date.</p>
+      </div>
+      <div data-reveal style="display:grid;grid-template-columns:86px 1fr;gap:18px;background:#fff;border-radius:10px;padding:20px 22px;">
+        <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:#B08AA0;padding-top:4px;line-height:1.4;">Token</div>
+        <p style="font-size:15px;line-height:1.7;margin:0;color:#231A4E;"><strong style="font-weight:700;">Use the design token, not a raw grey.</strong> The separator moved to <code style="font-family:ui-monospace,Menlo,monospace;font-size:0.9em;background:#F7EDEA;padding:1px 5px;border-radius:3px;">border-main</code>, which resolves to the Wonderschool palette grey <code style="font-family:ui-monospace,Menlo,monospace;font-size:0.9em;background:#F7EDEA;padding:1px 5px;border-radius:3px;">#D9D9D9</code> and is what the design system uses for its own dividers. Same visible result, correct provenance.</p>
+      </div>
+    </section>
+
+    <section style="max-width:660px;margin:0 auto;padding:88px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:30px;letter-spacing:-1px;color:#231A4E;margin:0 0 22px;">The mistake worth keeping</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 24px;">The colour error is the most instructive thing in this run, because it was not carelessness. Claude picked <code style="font-family:ui-monospace,Menlo,monospace;font-size:0.9em;background:#F7EDEA;padding:1px 5px;border-radius:3px;">gray-300</code> because that is the lighter divider grey in our React design system. It is right there and wrong in LiveView, and nothing warns you:</p>
+      <div data-reveal style="background:#fff;border-radius:12px;padding:22px 24px;margin-bottom:24px;">
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:12px;font-size:10.5px;font-family:'Lexend',sans-serif;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;color:#B08AA0;padding-bottom:10px;border-bottom:1px solid #F1DAD5;">
+          <span>Stack</span><span>gray-300</span><span>gray-400</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:12px;font-size:13.5px;color:#231A4E;padding:12px 0;border-bottom:1px solid #F7EDEA;">
+          <span>React, root config</span><span><code style="font-family:ui-monospace,Menlo,monospace;font-size:0.92em;">#D9D9D9</code> on-palette</span><span><code style="font-family:ui-monospace,Menlo,monospace;font-size:0.92em;">#C1C1C1</code> on-palette</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:12px;font-size:13.5px;color:#231A4E;padding:12px 0 0;">
+          <span>Nova, LiveView config</span><span><code style="font-family:ui-monospace,Menlo,monospace;font-size:0.92em;">#d1d5db</code> stock Tailwind</span><span><code style="font-family:ui-monospace,Menlo,monospace;font-size:0.92em;">#9ca3af</code> stock Tailwind</span>
+        </div>
+      </div>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">One config replaces its colour set outright, the other extends it and covers only some shades, so the rest fall through to stock Tailwind. The same class name means two different colours depending on which half of the app you are in. Roughly 614 places in the LiveView code use <code style="font-family:ui-monospace,Menlo,monospace;font-size:0.9em;background:#F7EDEA;padding:1px 5px;border-radius:3px;">border-gray-300</code> against 22 that use the semantic token, so this is a codebase-wide drift that a review-spacing fix was never going to solve. It is now a ticket.</p>
+    </section>
+
+    <section style="max-width:660px;margin:0 auto;padding:88px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:30px;letter-spacing:-1px;color:#231A4E;margin:0 0 22px;">What it refused, which is the point</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 24px;">Six of the seven newly evaluated requests were handed back, each with a specific mechanical reason rather than a vague risk note. Attendance entry on the dashboard, because that data is read-only and feeds state subsidy submissions. Default billing day, because it sets up automatic charges. Required inquiry fields, because that is a conversion tradeoff, not a code change.</p>
+      <div data-reveal style="display:grid;grid-template-columns:86px 1fr;gap:18px;background:#fff;border-radius:10px;padding:20px 22px;margin-bottom:24px;">
+        <div style="font-family:'Lexend',sans-serif;font-weight:600;font-size:10px;letter-spacing:1.2px;text-transform:uppercase;color:#B08AA0;padding-top:4px;line-height:1.4;">Held back</div>
+        <p style="font-size:15px;line-height:1.7;margin:0;color:#231A4E;"><strong style="font-weight:700;">Even inside the request it did build, it stopped halfway.</strong> The provider also asked to bold reviewer names and locations. Reviewers render anonymously today, so that is not a formatting change, it is newly exposing parent identity on a public page. It was routed to a person as a policy decision and bundled with a related request so one call settles both.</p>
+      </div>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">Worth noting the request itself is thin: two sentences, no comments, no screenshot. There are no names on that page to bold, and nothing that could supply a location. So the most likely reading is that the provider was describing the convention she knows from other review sites. The right next step is asking her, not building.</p>
+    </section>
+
+    <section style="max-width:660px;margin:0 auto;padding:88px 32px 0;">
+      <h2 data-reveal style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:30px;letter-spacing:-1px;color:#231A4E;margin:0 0 22px;">Honest limits</h2>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0 0 24px;">Claude is not especially good at visual design. It produces a solid first pass, and both changes a person made were judgement rather than repair. The value is that the pass exists at all, on a request nobody would otherwise have opened.</p>
+      <p data-reveal style="font-size:16px;line-height:1.8;margin:0;">The seed data did not show the defect. The test reviews had no comment text, so the first screenshots looked tidy and proved nothing. Realistic review prose had to be seeded before the problem was visible at all, which is a reminder that a before-and-after can look like evidence without being any.</p>
+    </section>
+
+    <section style="max-width:660px;margin:0 auto;padding:72px 32px 0;">
+      <div data-reveal style="border-top:1px solid #F1DAD5;padding-top:26px;">
+        <p style="font-size:15.5px;line-height:1.7;color:#231A4E;margin:0;"><strong style="font-weight:700;">Where it stands.</strong> Three lines changed in one file, rendering on all six network listing pages. The LiveView test suite passes, 36 of 36, run locally. It is open as a draft pull request awaiting human review and merge. The skill has never merged anything and is not able to.</p>
+      </div>
+    </section>
+
+    <div style="text-align:center;margin-top:96px;">
+      <a href="index.html" style="display:inline-flex;align-items:center;gap:8px;font-family:'Unbounded',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.6px;color:#fff;background:#D6006E;padding:18px 40px;border-radius:999px;transition:transform .2s ease,box-shadow .2s ease;">Back to home</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:transparent;border-top:1px solid #F4DEDA;padding:120px 32px 100px;text-align:center;">
+    <h2 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:clamp(34px,5vw,62px);line-height:1.05;letter-spacing:-2px;color:#D6006E;margin:0 0 48px;">Let's keep<br>in touch</h2>
+    <div style="display:flex;gap:36px;justify-content:center;align-items:center;color:#231A4E;">
+      <a href="mailto:ccattebe@gmail.com" aria-label="Email" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"></rect><path d="M3.5 6.5l8.5 6 8.5-6"></path></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/caitlin-atteberry-b6901729/" target="_blank" aria-label="LinkedIn" style="transition:transform .2s ease;display:block;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0Z"></path></svg>
+      </a>
+    </div>
+  </footer>
+
+  </div>
+</div>
+
+<script src="reveal.js"></script>
+</body>
+</html>
